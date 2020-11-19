@@ -1,0 +1,516 @@
+﻿<UserControl x:Class="SimpleHmi.Views.MainPage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:Converters="clr-namespace:SimpleHmi.Converters"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="clr-namespace:SimpleHmi.Views"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vm="clr-namespace:SimpleHmi.ViewModels"
+              xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+             xmlns:ei="clr-namespace:Microsoft.Expression.Interactivity.Core;assembly=Microsoft.Expression.Interactions"
+             xmlns:prism="http://prismlibrary.com/"
+             prism:ViewModelLocator.AutoWireViewModel="True"
+             d:DesignHeight="800"
+             d:DesignWidth="980"
+             mc:Ignorable="d"
+             xmlns:design="clr-namespace:SimpleHmi.Designer"
+             d:DataContext="{d:DesignInstance design:DesignMainPageViewModel, IsDesignTimeCreatable=True}">
+    <UserControl.Resources>
+        <Converters:BooleanToBrushConverter x:Key="BooleanToBrushConverter" />
+    </UserControl.Resources>
+    <Grid Background="#FFB8F5C6" >
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="*" />
+
+        </Grid.RowDefinitions>
+
+        <TextBlock Width="116"
+                   Height="20"
+                   Margin="100,2,0,0"
+                   HorizontalAlignment="Left"
+                   VerticalAlignment="Top"
+                   Text=" Plc Ip Address"
+                   FontSize="16"
+                   FontWeight="Bold"
+                   TextWrapping="Wrap" />
+        <TextBox Width="307"
+                 Height="28"
+                 Margin="10,35,0,0"
+                 HorizontalAlignment="Left"
+                 VerticalAlignment="Top"
+                 Text="{Binding IpAddress}"
+                 TextWrapping="Wrap" />
+        <Button Width="129"
+                Height="31"
+                Margin="10,80,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Command="{Binding ConnectCommand, Mode=OneWay}"
+                Content="Connect" />
+        <Button Width="145"
+                Height="31"
+                Margin="172,80,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Command="{Binding DisconnectCommand, Mode=OneWay}"
+                Content="Disconnect" />
+
+        <Button Width="129"
+                Height="31"
+                Margin="10,128,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Command="{Binding StartCommand, Mode=OneWay}"
+                Content="Auto" />
+        <Button Width="145"
+                Height="31"
+                Margin="172,129,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Command="{Binding StopCommand, Mode=OneWay}"
+                Content="Manual" />
+        <StackPanel HorizontalAlignment="Left" Height="357" Margin="0,3,0,0" Grid.Row="1" VerticalAlignment="Top" Width="327">
+            <Label Content="Rotary Axis Joging" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Top" Height="auto" Width="auto" FontSize="16" HorizontalContentAlignment="Center" Padding="0" FontWeight="Bold"/>
+            <Label Content="Rotary Axis Jog Velocity(degree/sec)" HorizontalAlignment="Left" Margin="5,5,0,0"  VerticalAlignment="Top" Width="auto" Height="auto" FontSize="14" HorizontalContentAlignment="Center" Padding="0" />
+            <TextBox Width="307"
+                 Height="auto"
+                 Margin="0,5,0,0"
+                 HorizontalAlignment="Center"
+                 VerticalAlignment="Top" 
+                 FontSize="16"
+                 Text="{Binding RoterJogSpeed, Delay=10, Mode=TwoWay, UpdateSourceTrigger=LostFocus }" FontWeight="SemiBold" />
+            <Button
+            Style="{StaticResource RoundButtonTemplate}"
+            BorderBrush="Red" x:Name="button"  Content="Jogging +" HorizontalAlignment="Center" Margin="0,5,0,0" VerticalAlignment="Top" Width="306" Height="36"  TabIndex="2" Background="{Binding RoterMoveingState, Converter={StaticResource BooleanToBrushConverter}}" Foreground="Gold" BorderThickness="2"  >
+                <i:Interaction.Triggers>
+                    <i:EventTrigger EventName="PreviewMouseLeftButtonDown">
+                        <i:InvokeCommandAction Command="{Binding RoterJogPositveStartCommand}" />
+                    </i:EventTrigger>
+                    <i:EventTrigger EventName="PreviewMouseLeftButtonUp">
+                        <i:InvokeCommandAction Command="{Binding RoterJogPositveStopCommand}"/>
+                    </i:EventTrigger>
+                </i:Interaction.Triggers>
+            </Button>
+            <Button
+            Style="{StaticResource RoundButtonTemplate}"
+            BorderBrush="Gray" x:Name="button_Copy"  Content="Jogging -" HorizontalAlignment="Center" Margin="0,5,0,0" VerticalAlignment="Top" Width="304" Height="36"  TabIndex="2" Background="{Binding RoterMoveingState, Converter={StaticResource BooleanToBrushConverter}}" Foreground="Gold" BorderThickness="2" >
+                <i:Interaction.Triggers>
+                    <i:EventTrigger EventName="PreviewMouseLeftButtonDown">
+                        <i:InvokeCommandAction Command="{Binding RoterJogNegativeStartCommand}" />
+                    </i:EventTrigger>
+                    <i:EventTrigger EventName="PreviewMouseLeftButtonUp">
+                        <i:InvokeCommandAction Command="{Binding RoterJogNegativeStopCommand}"/>
+                    </i:EventTrigger>
+                </i:Interaction.Triggers>
+            </Button>
+            <Label Content="Rotary Axis Positioning" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Top" Height="auto" Width="auto" FontSize="16" HorizontalContentAlignment="Center" Padding="0" FontWeight="Bold"/>
+            <Label Content="Rotary Axis Positioning Velocity(degree/sec)" HorizontalAlignment="Left" Margin="5,5,0,0"  VerticalAlignment="Top" Width="auto" Height="auto" FontSize="14" HorizontalContentAlignment="Center" Padding="0"/>
+            <TextBox Width="307"
+                 Height="auto"
+                 Margin="0,5,0,0"
+                 HorizontalAlignment="Center"
+                 VerticalAlignment="Top" 
+                 FontSize="16"
+                 Text="{Binding RoterPositioningSpeed, Delay=10, Mode=TwoWay, UpdateSourceTrigger=LostFocus}"  FontWeight="SemiBold" />
+            <Label Content="Rotary Axis Commend Position(degree)" HorizontalAlignment="Left" Margin="5,5,0,0"  VerticalAlignment="Top" Width="auto" Height="auto" FontSize="14" HorizontalContentAlignment="Center" Padding="0" />
+            <TextBox Width="307"
+                 Height="auto"
+                 Margin="0,5,0,0"
+                 HorizontalAlignment="Center"
+                 VerticalAlignment="Top" 
+                 FontSize="16"
+                 Text="{Binding RoterCommendposition, Delay=10, Mode=TwoWay, UpdateSourceTrigger=LostFocus}"  FontWeight="SemiBold" />
+
+            <Button
+            Style="{StaticResource RoundButtonTemplate}"
+            BorderBrush="Red" x:Name="button_roter_position"  Content="Positioning Start " HorizontalAlignment="Center" Margin="0,5,0,0" VerticalAlignment="Top" Width="306" Height="36"  TabIndex="2" Background="{Binding RoterMoveingState, Converter={StaticResource BooleanToBrushConverter}}" Foreground="Gold" 
+            BorderThickness="2"  Click="Button_Click"
+             Command="{Binding RoterPostionStartCommand, Mode=OneWay}">
+            </Button>
+        </StackPanel>
+        <StackPanel Grid.Column="1" HorizontalAlignment="Left" Height="357" Margin="0,3,0,0" Grid.Row="1" VerticalAlignment="Top" Width="327">
+            <Label Content="Rotery Position Axis Joging" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Top" Height="auto" Width="auto" FontSize="16" HorizontalContentAlignment="Center" Padding="0" FontWeight="Bold"/>
+            <Label Content="Rotery Position Axis Jog Velocity(mm/sec)" HorizontalAlignment="Left" Margin="5,5,0,0"  VerticalAlignment="Top" Width="auto" Height="auto" FontSize="14" HorizontalContentAlignment="Center" Padding="0" />
+            <TextBox Width="307"
+                 Height="auto"
+                 Margin="0,5,0,0"
+                 HorizontalAlignment="Center"
+                 VerticalAlignment="Top" 
+                 FontSize="16"
+                 Text="{Binding RoteryPosJogSpeed, Delay=10, Mode=TwoWay, UpdateSourceTrigger=LostFocus}" FontWeight="SemiBold" />
+            <Button
+            Style="{StaticResource RoundButtonTemplate}"
+            BorderBrush="Red" x:Name="button_Rotery_Position_Positive"  Content="Jogging +" HorizontalAlignment="Center" Margin="0,5,0,0" VerticalAlignment="Top" Width="306" Height="36"  TabIndex="2" Background="{Binding RoteryPosMoveing, Converter={StaticResource BooleanToBrushConverter}}" Foreground="Gold" BorderThickness="2"  >
+                <i:Interaction.Triggers>
+                    <i:EventTrigger EventName="PreviewMouseLeftButtonDown">
+                        <i:InvokeCommandAction Command="{Binding RoteryPosJogPositveStartCommand}" />
+                    </i:EventTrigger>
+                    <i:EventTrigger EventName="PreviewMouseLeftButtonUp">
+                        <i:InvokeCommandAction Command="{Binding RoteryPosJogPositveStopCommand}"/>
+                    </i:EventTrigger>
+                </i:Interaction.Triggers>
+            </Button>
+            <Button
+            Style="{StaticResource RoundButtonTemplate}"
+            BorderBrush="Gray" x:Name="button_Rotery_Position_Negative"  Content="Jogging -" HorizontalAlignment="Center" Margin="0,5,0,0" VerticalAlignment="Top" Width="304" Height="36"  TabIndex="2" Background="{Binding RoteryPosMoveing, Converter={StaticResource BooleanToBrushConverter}}" Foreground="Gold" BorderThickness="2" >
+                <i:Interaction.Triggers>
+                    <i:EventTrigger EventName="PreviewMouseLeftButtonDown">
+                        <i:InvokeCommandAction Command="{Binding RoteryPosJogNegativeStartCommand}" />
+                    </i:EventTrigger>
+                    <i:EventTrigger EventName="PreviewMouseLeftButtonUp">
+                        <i:InvokeCommandAction Command="{Binding RoteryPosJogNegativeStopCommand}"/>
+                    </i:EventTrigger>
+                </i:Interaction.Triggers>
+            </Button>
+            <Label Content="Rotery Position Axis Positioning" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Top" Height="auto" Width="auto" FontSize="16" HorizontalContentAlignment="Center" Padding="0" FontWeight="Bold"/>
+            <Label Content="Rotery Position Axis Positioning Velocity(mm/sec)" HorizontalAlignment="Left" Margin="5,5,0,0"  VerticalAlignment="Top" Width="auto" Height="auto" FontSize="14" HorizontalContentAlignment="Center" Padding="0"/>
+            <TextBox Width="307"
+                 Height="auto"
+                 Margin="0,5,0,0"
+                 HorizontalAlignment="Center"
+                 VerticalAlignment="Top" 
+                 FontSize="16"
+                 Text="{Binding RoteryPosPositioningSpeed, Delay=10, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"  FontWeight="SemiBold" />
+            <Label Content="Rotery Position Axis Commend Position(mm)" HorizontalAlignment="Left" Margin="5,5,0,0"  VerticalAlignment="Top" Width="auto" Height="auto" FontSize="14" HorizontalContentAlignment="Center" Padding="0" />
+            <TextBox Width="307"
+                 Height="auto"
+                 Margin="0,5,0,0"
+                 HorizontalAlignment="Center"
+                 VerticalAlignment="Top" 
+                 FontSize="16"
+                 Text="{Binding RoteryPosCommendposition, Delay=10, Mode=TwoWay, UpdateSourceTrigger=LostFocus}"  FontWeight="SemiBold" />
+
+            <Button
+            Style="{StaticResource RoundButtonTemplate}"
+            BorderBrush="Red" x:Name="button_Rotery_Position_position"  Content="Positioning Start " HorizontalAlignment="Center" Margin="0,5,0,0" VerticalAlignment="Top" Width="306" Height="36"  TabIndex="2" Background="{Binding RoteryPosMoveing, Converter={StaticResource BooleanToBrushConverter}}" Foreground="Gold" 
+            BorderThickness="2"  Click="Button_Click"
+             Command="{Binding RoteryPosPostionStartCommand, Mode=OneWay}">
+            </Button>
+        </StackPanel>
+        <StackPanel Grid.Column="2" HorizontalAlignment="Left" Height="357" Margin="0,3,0,0" Grid.Row="1" VerticalAlignment="Top" Width="327">
+            <Label Content="Shorter Axis Joging" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Top" Height="auto" Width="auto" FontSize="16" HorizontalContentAlignment="Center" Padding="0" FontWeight="Bold"/>
+            <Label Content="Shorter Axis Jog Velocity(mm/sec)" HorizontalAlignment="Left" Margin="5,5,0,0"  VerticalAlignment="Top" Width="auto" Height="auto" FontSize="14" HorizontalContentAlignment="Center" Padding="0" />
+            <TextBox Width="307"
+                 Height="auto"
+                 Margin="0,5,0,0"
+                 HorizontalAlignment="Center"
+                 VerticalAlignment="Top" 
+                 FontSize="16"
+                 Text="{Binding ShorterJogSpeed, Delay=10, Mode=TwoWay, UpdateSourceTrigger=LostFocus}" FontWeight="SemiBold" />
+            <Button
+            Style="{StaticResource RoundButtonTemplate}"
+            BorderBrush="Red" x:Name="button_Shorter_Positive"  Content="Jogging +" HorizontalAlignment="Center" Margin="0,5,0,0" VerticalAlignment="Top" Width="306" Height="36"  TabIndex="2" Background="{Binding ShorterMoveing, Converter={StaticResource BooleanToBrushConverter}}" Foreground="Gold" BorderThickness="2"  >
+                <i:Interaction.Triggers>
+                    <i:EventTrigger EventName="PreviewMouseLeftButtonDown">
+                        <i:InvokeCommandAction Command="{Binding ShorterJogPositveStartCommand}" />
+                    </i:EventTrigger>
+                    <i:EventTrigger EventName="PreviewMouseLeftButtonUp">
+                        <i:InvokeCommandAction Command="{Binding ShorterJogPositveStopCommand}"/>
+                    </i:EventTrigger>
+                </i:Interaction.Triggers>
+            </Button>
+            <Button
+            Style="{StaticResource RoundButtonTemplate}"
+            BorderBrush="Gray" x:Name="button_Shorter_Negative"  Content="Jogging -" HorizontalAlignment="Center" Margin="0,5,0,0" VerticalAlignment="Top" Width="304" Height="36"  TabIndex="2" Background="{Binding ShorterMoveing, Converter={StaticResource BooleanToBrushConverter}}" Foreground="Gold" BorderThickness="2" >
+                <i:Interaction.Triggers>
+                    <i:EventTrigger EventName="PreviewMouseLeftButtonDown">
+                        <i:InvokeCommandAction Command="{Binding ShorterJogNegativeStartCommand}" />
+                    </i:EventTrigger>
+                    <i:EventTrigger EventName="PreviewMouseLeftButtonUp">
+                        <i:InvokeCommandAction Command="{Binding ShorterJogNegativeStopCommand}"/>
+                    </i:EventTrigger>
+                </i:Interaction.Triggers>
+            </Button>
+            <Label Content="Shorter Axis Positioning" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Top" Height="auto" Width="auto" FontSize="16" HorizontalContentAlignment="Center" Padding="0" FontWeight="Bold"/>
+            <Label Content="Shorter Axis Positioning Velocity(mm/sec)" HorizontalAlignment="Left" Margin="5,5,0,0"  VerticalAlignment="Top" Width="auto" Height="auto" FontSize="14" HorizontalContentAlignment="Center" Padding="0"/>
+            <TextBox Width="307"
+                 Height="auto"
+                 Margin="0,5,0,0"
+                 HorizontalAlignment="Center"
+                 VerticalAlignment="Top" 
+                 FontSize="16"
+                 Text="{Binding ShorterPositioningSpeed, Delay=10, Mode=TwoWay, UpdateSourceTrigger=LostFocus}"  FontWeight="SemiBold" />
+            <Label Content="Shorter Axis Commend Position(mm)" HorizontalAlignment="Left" Margin="5,5,0,0"  VerticalAlignment="Top" Width="auto" Height="auto" FontSize="14" HorizontalContentAlignment="Center" Padding="0" />
+            <TextBox Width="307"
+                 Height="auto"
+                 Margin="0,5,0,0"
+                 MaxLength="3"
+                     
+                 HorizontalAlignment="Center"
+                 VerticalAlignment="Top" 
+                 FontSize="16"
+                 Text="{Binding ShorterCommendposition, Delay=10, Mode=TwoWay, UpdateSourceTrigger=LostFocus}"  FontWeight="SemiBold" />
+
+            <Button
+            Style="{StaticResource RoundButtonTemplate}"
+            BorderBrush="Red" x:Name="button_Shorter_position"  Content="Positioning Start " HorizontalAlignment="Center" Margin="0,5,0,0" VerticalAlignment="Top" Width="306" Height="36"  TabIndex="2" Background="{Binding ShorterMoveing, Converter={StaticResource BooleanToBrushConverter}}" Foreground="Gold" 
+            BorderThickness="2"  Click="Button_Click"
+             Command="{Binding ShorterPostionStartCommand, Mode=OneWay}">
+            </Button>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Left" Height="180" Grid.Row="2" VerticalAlignment="Top" Width="327">
+            <Label Content="Pneumatic Operation" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Top" Height="auto" Width="auto" FontSize="16" HorizontalContentAlignment="Center" Padding="0" FontWeight="Bold"/>
+            <ToggleButton  Height="36" Width="306" HorizontalAlignment="Center" Margin="0,5,0,0" VerticalAlignment="Top" >
+                <i:Interaction.Triggers>
+                    <i:EventTrigger EventName="Checked">
+                        <i:InvokeCommandAction Command="{Binding MainGripperStartCommand}"/>
+                    </i:EventTrigger>
+                    <i:EventTrigger EventName="Unchecked">
+                        <i:InvokeCommandAction Command="{Binding MainGripperStopCommand}"/>
+                    </i:EventTrigger>
+                </i:Interaction.Triggers>
+                <ToggleButton.Style>
+                    <Style TargetType="{x:Type ToggleButton}">
+                        <Setter Property="Content" Value="Main Gripper Open "/>
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="{x:Type ToggleButton}">
+                                    <Border CornerRadius="15" Background="{Binding MainGripperState, Converter={StaticResource BooleanToBrushConverter}}"
+                                BorderThickness="1">
+                                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                        <Style.Triggers>
+                            <Trigger Property="IsChecked" Value="True">
+                                <Setter Property="Content" Value="Main Gripper Close"/>
+                                <Setter Property="Foreground" Value="WhiteSmoke"/>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </ToggleButton.Style>
+            </ToggleButton>
+            <ToggleButton HorizontalAlignment="Center" Margin="0,2,0,0" VerticalAlignment="Top" Height="36" Width="306" >
+                <i:Interaction.Triggers>
+                    <i:EventTrigger EventName="Checked">
+                        <i:InvokeCommandAction Command="{Binding ShorterGripperStartCommand}"/>
+                    </i:EventTrigger>
+                    <i:EventTrigger EventName="Unchecked">
+                        <i:InvokeCommandAction Command="{Binding ShorterGripperStopCommand}"/>
+                    </i:EventTrigger>
+                </i:Interaction.Triggers>
+                <ToggleButton.Style>
+                    <Style TargetType="{x:Type ToggleButton}">
+                        <Setter Property="Content" Value="Shorter Gripper Open "/>
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="{x:Type ToggleButton}">
+                                    <Border CornerRadius="15" Background="{Binding ShorterGripperState, Converter={StaticResource BooleanToBrushConverter}}"
+                                BorderThickness="1">
+                                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                        <Style.Triggers>
+                            <Trigger Property="IsChecked" Value="True">
+                                <Setter Property="Content" Value="Shorter Gripper Close"/>
+                                <Setter Property="Foreground" Value="WhiteSmoke"/>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </ToggleButton.Style>
+            </ToggleButton>
+            <ToggleButton HorizontalAlignment="Center" Margin="0,2,0,0" VerticalAlignment="Top" Height="36" Width="306" >
+                <i:Interaction.Triggers>
+                    <i:EventTrigger EventName="Checked">
+                        <i:InvokeCommandAction Command="{Binding ShorterCylinderStartCommand}"/>
+                    </i:EventTrigger>
+                    <i:EventTrigger EventName="Unchecked">
+                        <i:InvokeCommandAction Command="{Binding ShorterCylinderStopCommand}"/>
+                    </i:EventTrigger>
+                </i:Interaction.Triggers>
+                <ToggleButton.Style>
+                    <Style TargetType="{x:Type ToggleButton}">
+                        <Setter Property="Content" Value="Shorter Cylinde Open "/>
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="{x:Type ToggleButton}">
+                                    <Border CornerRadius="15" Background="{Binding ShorterCylinderState, Converter={StaticResource BooleanToBrushConverter}}"
+                                BorderThickness="1">
+                                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                        <Style.Triggers>
+                            <Trigger Property="IsChecked" Value="True">
+                                <Setter Property="Content" Value="Shorter Cylinder Close"/>
+                                <Setter Property="Foreground" Value="WhiteSmoke"/>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </ToggleButton.Style>
+            </ToggleButton>
+        </StackPanel>
+        <StackPanel Grid.Column="1" HorizontalAlignment="Left" Height="180" Grid.Row="2" VerticalAlignment="Top" Width="327">
+            <Label Content="Axis Homeing" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Top" Height="auto" Width="auto" FontSize="16" HorizontalContentAlignment="Center" Padding="0" FontWeight="Bold"/>
+            <Button
+            Style="{StaticResource RoundButtonTemplate}"
+            BorderBrush="Red" x:Name="button_Homing_Shorter"  Content="Shorter Axis Homeing Start " HorizontalAlignment="Center" Margin="0,5,0,0" VerticalAlignment="Top" Width="306" Height="36"  TabIndex="2" Background="{Binding ShorterMoveing, Converter={StaticResource BooleanToBrushConverter}}" Foreground="GreenYellow" 
+            BorderThickness="2"  Click="Button_Click"
+             Command="{Binding ShorterPostionHomingCommand, Mode=OneWay}">
+            </Button>
+            <Button
+            Style="{StaticResource RoundButtonTemplate}"
+            BorderBrush="Red" x:Name="button_Homing"  Content="Rotery Position Axis Homeing Start " HorizontalAlignment="Center" Margin="0,5,0,0" VerticalAlignment="Top" Width="306" Height="36"  TabIndex="2" Background="{Binding RoteryPosMoveing, Converter={StaticResource BooleanToBrushConverter}}" Foreground="GreenYellow" 
+            BorderThickness="2"  Click="Button_Click"
+             Command="{Binding RoteryPosPostionHomingCommand, Mode=OneWay}">
+            </Button>
+            <Button
+            Style="{StaticResource RoundButtonTemplate}"
+            BorderBrush="Red" x:Name="button_roter_Homing"  Content="Roter Axis Homing Start " HorizontalAlignment="Center" Margin="10,5,11,0" VerticalAlignment="Top" Width="306" Height="36"  TabIndex="2" Background="{Binding RoterMoveingState, Converter={StaticResource BooleanToBrushConverter}}" Foreground="GreenYellow" 
+            BorderThickness="2"  Click="Button_Click"
+             Command="{Binding RoterPostionHomingCommand, Mode=OneWay}">
+            </Button>
+        </StackPanel>
+        <StackPanel Grid.Column="3" HorizontalAlignment="Left" Height="180"  Grid.Row="2" VerticalAlignment="Top" Width="327" Grid.ColumnSpan="2">
+            <Label Content="Manual Vision Test" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Top" Height="auto" Width="auto" FontSize="16" HorizontalContentAlignment="Center" Padding="0" FontWeight="Bold"/>
+            <Button
+            Style="{StaticResource RoundButtonTemplate}"
+            BorderBrush="Red" x:Name="button_Alignment_Test"  Content="Alignment Check" HorizontalAlignment="Center" Margin="0,5,0,0" VerticalAlignment="Top" Width="306" Height="36"  TabIndex="2" Background="{Binding ShorterMoveing, Converter={StaticResource BooleanToBrushConverter}}" Foreground="Yellow" 
+            BorderThickness="2"  Click="Button_Click"
+             Command="{Binding AlignmentTestCommand, Mode=OneWay}">
+            </Button>
+            <Button
+            Style="{StaticResource RoundButtonTemplate}"
+            BorderBrush="Red" x:Name="button_Crack_Check"  Content="Crack Check" HorizontalAlignment="Center" Margin="0,5,0,0" VerticalAlignment="Top" Width="306" Height="36"  TabIndex="2" Background="{Binding RoteryPosMoveing, Converter={StaticResource BooleanToBrushConverter}}" Foreground="Yellow" 
+            BorderThickness="2"  Click="Button_Click"
+             Command="{Binding CrackCheckCommand, Mode=OneWay}">
+            </Button>
+            <Button
+            Style="{StaticResource RoundButtonTemplate}"
+            BorderBrush="Red" x:Name="button_Dust_Check"  Content="Dust Check " HorizontalAlignment="Center" Margin="10,5,11,0" VerticalAlignment="Top" Width="306" Height="36"  TabIndex="2" Background="{Binding RoterMoveingState, Converter={StaticResource BooleanToBrushConverter}}" Foreground="Yellow" 
+            BorderThickness="2"  Click="Button_Click"
+             Command="{Binding DustCheckCommand, Mode=OneWay}">
+            </Button>
+        </StackPanel>
+        <StackPanel Grid.Column="2" HorizontalAlignment="Left" Height="200" VerticalAlignment="Top" Width="326">
+            <Label Content="Auto Vision Test Selection" HorizontalAlignment="Center" Margin="0,2,0,0" VerticalAlignment="Top" Height="auto" Width="auto" FontSize="16" HorizontalContentAlignment="Center" Padding="0" FontWeight="Bold"/>
+            <StackPanel Margin="10,10,0,0"  Orientation="Horizontal"  HorizontalAlignment="Stretch" Height="auto" VerticalAlignment="Top">
+                <CheckBox  Margin="0,0,0,0" HorizontalAlignment="Left" IsChecked="{Binding AligmentCheckState, Mode=OneWay}" Content="Alignment Check">
+                    <CheckBox.LayoutTransform>
+                        <ScaleTransform ScaleX="1.5" ScaleY="1.5" />
+                    </CheckBox.LayoutTransform>
+                    <i:Interaction.Triggers>
+                        <i:EventTrigger EventName="Checked">
+                            <i:InvokeCommandAction Command="{Binding AligmentCheckSelectedCommand}"/>
+                        </i:EventTrigger>
+                        <i:EventTrigger EventName="Unchecked">
+                            <i:InvokeCommandAction Command="{Binding AligmentCheckNotSelectedCommand}"/>
+                        </i:EventTrigger>
+                    </i:Interaction.Triggers>
+                </CheckBox>
+                <Ellipse Width="20"
+                 Height="20"
+                 Margin="49,0,0,0"
+                 HorizontalAlignment="Left"
+                 VerticalAlignment="Top"
+                 Fill="{Binding AligmentCheckState, Converter={StaticResource BooleanToBrushConverter}}"
+                 Stroke="Black"  RenderTransformOrigin="0.421,-0.389" />
+            </StackPanel>
+            <StackPanel  Margin="10,10,0,0" Orientation="Horizontal"  HorizontalAlignment="Stretch" Height="auto" VerticalAlignment="Top">
+                <CheckBox  Margin="0,0,0,0" HorizontalAlignment="Left" IsChecked="{Binding CrackCheckState, Mode=OneWay}" Content="Crack Check">
+                    <CheckBox.LayoutTransform>
+                        <ScaleTransform ScaleX="1.5" ScaleY="1.5" />
+                    </CheckBox.LayoutTransform>
+                    <i:Interaction.Triggers>
+                        <i:EventTrigger EventName="Checked">
+                            <i:InvokeCommandAction Command="{Binding CrackCheckSelectedCommand}"/>
+                        </i:EventTrigger>
+                        <i:EventTrigger EventName="Unchecked">
+                            <i:InvokeCommandAction Command="{Binding CrackCheckNotSelectedCommand}"/>
+                        </i:EventTrigger>
+                    </i:Interaction.Triggers>
+                </CheckBox>
+                <Ellipse Width="20"
+                 Height="20"
+                 Margin="88,0,0,0"
+                 HorizontalAlignment="Left"
+                 VerticalAlignment="Top"
+                 Fill="{Binding CrackCheckState, Converter={StaticResource BooleanToBrushConverter}}"
+                 Stroke="Black"  RenderTransformOrigin="0.421,-0.389" />
+
+            </StackPanel>
+            <StackPanel  Margin="10,10,0,0"  Orientation="Horizontal"  HorizontalAlignment="Stretch" Height="auto" VerticalAlignment="Top">
+                <CheckBox  Margin="0,0,0,0" HorizontalAlignment="Left" IsChecked="{Binding DustCheckState , Mode=OneWay}" Content="Dust Check">
+                    <CheckBox.LayoutTransform>
+                        <ScaleTransform ScaleX="1.5" ScaleY="1.5" />
+                    </CheckBox.LayoutTransform>
+                    <i:Interaction.Triggers>
+                        <i:EventTrigger EventName="Checked">
+                            <i:InvokeCommandAction Command="{Binding DustCheckSelectedCommand}"/>
+                        </i:EventTrigger>
+                        <i:EventTrigger EventName="Unchecked">
+                            <i:InvokeCommandAction Command="{Binding DustCheckNotSelectedCommand}"/>
+                        </i:EventTrigger>
+                    </i:Interaction.Triggers>
+                </CheckBox>
+                <Ellipse Width="20"
+                 Height="20"
+                 Margin="96,0,0,0"
+                 HorizontalAlignment="Left"
+                 VerticalAlignment="Top"
+                 Fill="{Binding DustCheckState, Converter={StaticResource BooleanToBrushConverter}}"
+                 Stroke="Black"  RenderTransformOrigin="0.421,-0.389" />
+
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Grid.Column="1" HorizontalAlignment="Left" Height="200" VerticalAlignment="Top" Width="327">
+            <Label Content="Production Counter" HorizontalAlignment="Center" Margin="0,2,0,0" VerticalAlignment="Top" Height="auto" Width="auto" FontSize="16" HorizontalContentAlignment="Center" Padding="0" FontWeight="Bold" BorderThickness="0"/>
+            <StackPanel Background="LightPink" Margin="10,2,10,0" Orientation="Horizontal"  HorizontalAlignment="Stretch" Height="auto" VerticalAlignment="Top">
+                <Label Content=" Selected Part " HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center" Height="auto" Width="125" FontSize="16" HorizontalContentAlignment="Left" Padding="0" FontWeight="Bold" BorderThickness="2" Background="#FFE8EAEF"/>
+                <TextBox 
+                 HorizontalContentAlignment="Stretch"
+                 Margin="10,0,0,0"                
+                 VerticalAlignment="Center" 
+                 FontSize="16"
+                 Text="{Binding Productselected}" FontWeight="SemiBold" Width="150"  />
+            </StackPanel>
+            <StackPanel Background="LightPink" Margin="10,2,10,0" Orientation="Horizontal"  HorizontalAlignment="Stretch" Height="auto" VerticalAlignment="Top">
+                <Label Content=" Total Part " HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center" Height="auto" Width="125" FontSize="16" HorizontalContentAlignment="Left" Padding="0" FontWeight="Bold" BorderThickness="2" Background="#FFE8EAEF"/>
+                <TextBox 
+                 HorizontalContentAlignment="Stretch"
+                 Margin="10,0,0,0"                
+                 VerticalAlignment="Center" 
+                 FontSize="16"
+                 Text="{Binding TotalPart}" FontWeight="SemiBold" Width="150"  />
+
+            </StackPanel>
+            <StackPanel Background="LightPink" Margin="10,2,10,0" Orientation="Horizontal"  HorizontalAlignment="Stretch" Height="auto" VerticalAlignment="Top">
+                <Label Content=" Good Part " HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center" Height="auto" Width="125" FontSize="16" HorizontalContentAlignment="Left" Padding="0" FontWeight="Bold" BorderThickness="2" Background="#FFE8EAEF"/>
+                <TextBox 
+                 HorizontalContentAlignment="Stretch"
+                 Margin="10,0,0,0"                
+                 VerticalAlignment="Center" 
+                 FontSize="16"
+                 Text="{Binding GoodPart}" FontWeight="SemiBold" Width="150"  />
+            </StackPanel>
+            <StackPanel Background="LightPink" Margin="10,2,10,0" Orientation="Horizontal"  HorizontalAlignment="Stretch" Height="auto" VerticalAlignment="Top">
+                <Label Content=" Not Good Part " HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center" Height="auto" Width="125" FontSize="16" HorizontalContentAlignment="Left" Padding="0" FontWeight="Bold" BorderThickness="2" Background="#FFE8EAEF"/>
+                <TextBox 
+                 HorizontalContentAlignment="Stretch"
+                 Margin="10,0,0,0"                
+                 VerticalAlignment="Center" 
+                 FontSize="16"
+                 Text="{Binding NotGoodPart}" FontWeight="SemiBold" Width="150"  />
+            </StackPanel>
+            <Button
+            Style="{StaticResource RoundButtonTemplate}"
+            BorderBrush="Red" x:Name="button_production_reset"  Content="Production Reset" HorizontalAlignment="Center" Margin="0,2,0,0" VerticalAlignment="Top" Width="306" Height="25"  TabIndex="2" Background="{Binding ShorterMoveing, Converter={StaticResource BooleanToBrushConverter}}" Foreground="Gold" 
+            BorderThickness="2"  Click="Button_Click"
+             Command="{Binding ProductionResetCommand, Mode=OneWay}">
+            </Button>
+        </StackPanel>
+
+    </Grid>
+</UserControl>

@@ -1,0 +1,24 @@
+D:\mesta\New folder\ASM\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi.Infrastructure\bin\Debug\SimpleHmi.Infrastructure.dll
+D:\mesta\New folder\ASM\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi.Infrastructure\bin\Debug\SimpleHmi.Infrastructure.pdb
+D:\mesta\New folder\ASM\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi.Infrastructure\obj\Debug\SimpleHmi.Infrastructure.csprojAssemblyReference.cache
+D:\mesta\New folder\ASM\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi.Infrastructure\obj\Debug\SimpleHmi.Infrastructure.csproj.CoreCompileInputs.cache
+D:\mesta\New folder\ASM\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi.Infrastructure\obj\Debug\SimpleHmi.Infrastructure.dll
+D:\mesta\New folder\ASM\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi.Infrastructure\obj\Debug\SimpleHmi.Infrastructure.pdb
+D:\ASM\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi.Infrastructure\bin\Debug\SimpleHmi.Infrastructure.dll
+D:\ASM\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi.Infrastructure\bin\Debug\SimpleHmi.Infrastructure.pdb
+D:\ASM\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi.Infrastructure\obj\Debug\SimpleHmi.Infrastructure.csprojAssemblyReference.cache
+D:\ASM\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi.Infrastructure\obj\Debug\SimpleHmi.Infrastructure.csproj.CoreCompileInputs.cache
+D:\ASM\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi.Infrastructure\obj\Debug\SimpleHmi.Infrastructure.dll
+D:\ASM\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi.Infrastructure\obj\Debug\SimpleHmi.Infrastructure.pdb
+D:\ASM\New folder (2)\HMI_Prism\SimpleHmi.Infrastructure\bin\Debug\SimpleHmi.Infrastructure.dll
+D:\ASM\New folder (2)\HMI_Prism\SimpleHmi.Infrastructure\bin\Debug\SimpleHmi.Infrastructure.pdb
+D:\ASM\New folder (2)\HMI_Prism\SimpleHmi.Infrastructure\obj\Debug\SimpleHmi.Infrastructure.csprojAssemblyReference.cache
+D:\ASM\New folder (2)\HMI_Prism\SimpleHmi.Infrastructure\obj\Debug\SimpleHmi.Infrastructure.csproj.CoreCompileInputs.cache
+D:\ASM\New folder (2)\HMI_Prism\SimpleHmi.Infrastructure\obj\Debug\SimpleHmi.Infrastructure.dll
+D:\ASM\New folder (2)\HMI_Prism\SimpleHmi.Infrastructure\obj\Debug\SimpleHmi.Infrastructure.pdb
+D:\ASM\HMI-main\HMI-main\SimpleHmi.Infrastructure\bin\Debug\SimpleHmi.Infrastructure.dll
+D:\ASM\HMI-main\HMI-main\SimpleHmi.Infrastructure\bin\Debug\SimpleHmi.Infrastructure.pdb
+D:\ASM\HMI-main\HMI-main\SimpleHmi.Infrastructure\obj\Debug\SimpleHmi.Infrastructure.csprojAssemblyReference.cache
+D:\ASM\HMI-main\HMI-main\SimpleHmi.Infrastructure\obj\Debug\SimpleHmi.Infrastructure.csproj.CoreCompileInputs.cache
+D:\ASM\HMI-main\HMI-main\SimpleHmi.Infrastructure\obj\Debug\SimpleHmi.Infrastructure.dll
+D:\ASM\HMI-main\HMI-main\SimpleHmi.Infrastructure\obj\Debug\SimpleHmi.Infrastructure.pdb

@@ -1,0 +1,320 @@
+D:\mesta\New folder\ASM\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\bin\Debug\SimpleHmi.exe.config
+D:\mesta\New folder\ASM\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\bin\Debug\SimpleHmi.exe
+D:\mesta\New folder\ASM\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\bin\Debug\SimpleHmi.pdb
+D:\mesta\New folder\ASM\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\bin\Debug\Autofac.dll
+D:\mesta\New folder\ASM\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\mesta\New folder\ASM\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\bin\Debug\Prism.Autofac.Wpf.dll
+D:\mesta\New folder\ASM\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\bin\Debug\Prism.dll
+D:\mesta\New folder\ASM\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\bin\Debug\Prism.Wpf.dll
+D:\mesta\New folder\ASM\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\bin\Debug\SimpleHmi.Infrastructure.dll
+D:\mesta\New folder\ASM\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\bin\Debug\SimpleHmi.PlcService.dll
+D:\mesta\New folder\ASM\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\bin\Debug\NModbus4.dll
+D:\mesta\New folder\ASM\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\bin\Debug\System.Windows.Interactivity.dll
+D:\mesta\New folder\ASM\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\bin\Debug\SimpleHmi.Infrastructure.pdb
+D:\mesta\New folder\ASM\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\bin\Debug\SimpleHmi.PlcService.pdb
+D:\mesta\New folder\ASM\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\bin\Debug\Autofac.xml
+D:\mesta\New folder\ASM\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+D:\mesta\New folder\ASM\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+D:\mesta\New folder\ASM\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\bin\Debug\Prism.xml
+D:\mesta\New folder\ASM\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\bin\Debug\Prism.Autofac.Wpf.xml
+D:\mesta\New folder\ASM\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\bin\Debug\Prism.Autofac.Wpf.dll.config
+D:\mesta\New folder\ASM\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\bin\Debug\Prism.Wpf.xml
+D:\mesta\New folder\ASM\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\bin\Debug\NModbus4.xml
+D:\mesta\New folder\ASM\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\obj\Debug\SimpleHmi.csprojAssemblyReference.cache
+D:\mesta\New folder\ASM\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\obj\Debug\Views\HmiStatusBar.g.cs
+D:\mesta\New folder\ASM\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\obj\Debug\Views\LeftMenu.g.cs
+D:\mesta\New folder\ASM\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\obj\Debug\Views\MainPage.g.cs
+D:\mesta\New folder\ASM\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\obj\Debug\Views\MainWindow.g.cs
+D:\mesta\New folder\ASM\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\obj\Debug\Views\SettingsPage.g.cs
+D:\mesta\New folder\ASM\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\obj\Debug\App.g.cs
+D:\mesta\New folder\ASM\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\mesta\New folder\ASM\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\obj\Debug\SimpleHmi_MarkupCompile.cache
+D:\mesta\New folder\ASM\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\obj\Debug\SimpleHmi_MarkupCompile.lref
+D:\mesta\New folder\ASM\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\obj\Debug\Views\HmiStatusBar.baml
+D:\mesta\New folder\ASM\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\obj\Debug\Views\LeftMenu.baml
+D:\mesta\New folder\ASM\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\obj\Debug\Views\MainPage.baml
+D:\mesta\New folder\ASM\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\obj\Debug\Views\MainWindow.baml
+D:\mesta\New folder\ASM\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\obj\Debug\Views\SettingsPage.baml
+D:\mesta\New folder\ASM\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\obj\Debug\SimpleHmi.g.resources
+D:\mesta\New folder\ASM\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\obj\Debug\SimpleHmi.Properties.Resources.resources
+D:\mesta\New folder\ASM\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\obj\Debug\SimpleHmi.csproj.GenerateResource.cache
+D:\mesta\New folder\ASM\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\obj\Debug\SimpleHmi.csproj.CoreCompileInputs.cache
+D:\mesta\New folder\ASM\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\obj\Debug\SimpleHmi.csproj.CopyComplete
+D:\mesta\New folder\ASM\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\obj\Debug\SimpleHmi.exe
+D:\mesta\New folder\ASM\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\obj\Debug\SimpleHmi.pdb
+D:\ASM\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\obj\Debug\SimpleHmi.exe
+D:\ASM\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\obj\Debug\SimpleHmi.pdb
+D:\ASM\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\bin\Debug\SimpleHmi.exe.config
+D:\ASM\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\bin\Debug\SimpleHmi.exe
+D:\ASM\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\bin\Debug\SimpleHmi.pdb
+D:\ASM\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\bin\Debug\Autofac.dll
+D:\ASM\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\bin\Debug\Prism.Autofac.Wpf.dll
+D:\ASM\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\bin\Debug\Prism.dll
+D:\ASM\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\bin\Debug\Prism.Wpf.dll
+D:\ASM\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\bin\Debug\SimpleHmi.Infrastructure.dll
+D:\ASM\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\bin\Debug\SimpleHmi.PlcService.dll
+D:\ASM\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\bin\Debug\System.Windows.Interactivity.dll
+D:\ASM\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\bin\Debug\NModbus4.dll
+D:\ASM\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\ASM\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\bin\Debug\SimpleHmi.Infrastructure.pdb
+D:\ASM\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\bin\Debug\SimpleHmi.PlcService.pdb
+D:\ASM\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\bin\Debug\Autofac.xml
+D:\ASM\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\bin\Debug\Prism.xml
+D:\ASM\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\bin\Debug\Prism.Autofac.Wpf.xml
+D:\ASM\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\bin\Debug\Prism.Autofac.Wpf.dll.config
+D:\ASM\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\bin\Debug\Prism.Wpf.xml
+D:\ASM\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\bin\Debug\NModbus4.xml
+D:\ASM\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+D:\ASM\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+D:\ASM\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\obj\Debug\SimpleHmi.csprojAssemblyReference.cache
+D:\ASM\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\obj\Debug\Views\HmiStatusBar.g.cs
+D:\ASM\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\obj\Debug\Views\LeftMenu.g.cs
+D:\ASM\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\obj\Debug\Views\MainPage.g.cs
+D:\ASM\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\obj\Debug\Views\MainWindow.g.cs
+D:\ASM\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\obj\Debug\Views\SettingsPage.g.cs
+D:\ASM\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\obj\Debug\App.g.cs
+D:\ASM\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\ASM\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\obj\Debug\SimpleHmi_MarkupCompile.cache
+D:\ASM\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\obj\Debug\SimpleHmi_MarkupCompile.lref
+D:\ASM\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\obj\Debug\Views\HmiStatusBar.baml
+D:\ASM\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\obj\Debug\Views\LeftMenu.baml
+D:\ASM\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\obj\Debug\Views\MainPage.baml
+D:\ASM\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\obj\Debug\Views\MainWindow.baml
+D:\ASM\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\obj\Debug\Views\SettingsPage.baml
+D:\ASM\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\obj\Debug\SimpleHmi.g.resources
+D:\ASM\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\obj\Debug\SimpleHmi.Properties.Resources.resources
+D:\ASM\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\obj\Debug\SimpleHmi.csproj.GenerateResource.cache
+D:\ASM\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\obj\Debug\SimpleHmi.csproj.CoreCompileInputs.cache
+D:\ASM\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\obj\Debug\SimpleHmi.csproj.CopyComplete
+D:\ASM\New folder (2)\HMI\HMI\HMI\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\bin\Debug\SimpleHmi.exe.config
+D:\ASM\New folder (2)\HMI\HMI\HMI\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\bin\Debug\SimpleHmi.exe
+D:\ASM\New folder (2)\HMI\HMI\HMI\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\bin\Debug\SimpleHmi.pdb
+D:\ASM\New folder (2)\HMI\HMI\HMI\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\bin\Debug\Autofac.dll
+D:\ASM\New folder (2)\HMI\HMI\HMI\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\bin\Debug\Prism.Autofac.Wpf.dll
+D:\ASM\New folder (2)\HMI\HMI\HMI\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\bin\Debug\Prism.dll
+D:\ASM\New folder (2)\HMI\HMI\HMI\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\bin\Debug\Prism.Wpf.dll
+D:\ASM\New folder (2)\HMI\HMI\HMI\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\bin\Debug\SimpleHmi.Infrastructure.dll
+D:\ASM\New folder (2)\HMI\HMI\HMI\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\bin\Debug\SimpleHmi.PlcService.dll
+D:\ASM\New folder (2)\HMI\HMI\HMI\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\bin\Debug\System.Windows.Interactivity.dll
+D:\ASM\New folder (2)\HMI\HMI\HMI\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\bin\Debug\NModbus4.dll
+D:\ASM\New folder (2)\HMI\HMI\HMI\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\ASM\New folder (2)\HMI\HMI\HMI\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\bin\Debug\SimpleHmi.Infrastructure.pdb
+D:\ASM\New folder (2)\HMI\HMI\HMI\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\bin\Debug\SimpleHmi.PlcService.pdb
+D:\ASM\New folder (2)\HMI\HMI\HMI\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\bin\Debug\Autofac.xml
+D:\ASM\New folder (2)\HMI\HMI\HMI\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\bin\Debug\Prism.xml
+D:\ASM\New folder (2)\HMI\HMI\HMI\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\bin\Debug\Prism.Autofac.Wpf.xml
+D:\ASM\New folder (2)\HMI\HMI\HMI\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\bin\Debug\Prism.Autofac.Wpf.dll.config
+D:\ASM\New folder (2)\HMI\HMI\HMI\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\bin\Debug\Prism.Wpf.xml
+D:\ASM\New folder (2)\HMI\HMI\HMI\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\bin\Debug\NModbus4.xml
+D:\ASM\New folder (2)\HMI\HMI\HMI\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+D:\ASM\New folder (2)\HMI\HMI\HMI\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+D:\ASM\New folder (2)\HMI\HMI\HMI\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\obj\Debug\SimpleHmi.csprojAssemblyReference.cache
+D:\ASM\New folder (2)\HMI\HMI\HMI\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\obj\Debug\Views\HmiStatusBar.g.cs
+D:\ASM\New folder (2)\HMI\HMI\HMI\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\obj\Debug\Views\LeftMenu.g.cs
+D:\ASM\New folder (2)\HMI\HMI\HMI\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\obj\Debug\Views\MainPage.g.cs
+D:\ASM\New folder (2)\HMI\HMI\HMI\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\obj\Debug\Views\MainWindow.g.cs
+D:\ASM\New folder (2)\HMI\HMI\HMI\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\obj\Debug\Views\SettingsPage.g.cs
+D:\ASM\New folder (2)\HMI\HMI\HMI\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\obj\Debug\App.g.cs
+D:\ASM\New folder (2)\HMI\HMI\HMI\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\ASM\New folder (2)\HMI\HMI\HMI\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\obj\Debug\SimpleHmi_MarkupCompile.cache
+D:\ASM\New folder (2)\HMI\HMI\HMI\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\obj\Debug\SimpleHmi_MarkupCompile.lref
+D:\ASM\New folder (2)\HMI\HMI\HMI\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\obj\Debug\Views\HmiStatusBar.baml
+D:\ASM\New folder (2)\HMI\HMI\HMI\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\obj\Debug\Views\LeftMenu.baml
+D:\ASM\New folder (2)\HMI\HMI\HMI\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\obj\Debug\Views\MainPage.baml
+D:\ASM\New folder (2)\HMI\HMI\HMI\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\obj\Debug\Views\MainWindow.baml
+D:\ASM\New folder (2)\HMI\HMI\HMI\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\obj\Debug\Views\SettingsPage.baml
+D:\ASM\New folder (2)\HMI\HMI\HMI\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\obj\Debug\SimpleHmi.g.resources
+D:\ASM\New folder (2)\HMI\HMI\HMI\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\obj\Debug\SimpleHmi.Properties.Resources.resources
+D:\ASM\New folder (2)\HMI\HMI\HMI\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\obj\Debug\SimpleHmi.csproj.GenerateResource.cache
+D:\ASM\New folder (2)\HMI\HMI\HMI\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\obj\Debug\SimpleHmi.csproj.CoreCompileInputs.cache
+D:\ASM\New folder (2)\HMI\HMI\HMI\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\obj\Debug\SimpleHmi.csproj.CopyComplete
+D:\ASM\New folder (2)\HMI\HMI\HMI\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\obj\Debug\SimpleHmi.exe
+D:\ASM\New folder (2)\HMI\HMI\HMI\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\obj\Debug\SimpleHmi.pdb
+D:\ASM\New folder (2)\HMI\HMI\HMI\HMI\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\bin\Debug\SimpleHmi.exe.config
+D:\ASM\New folder (2)\HMI\HMI\HMI\HMI\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\bin\Debug\SimpleHmi.exe
+D:\ASM\New folder (2)\HMI\HMI\HMI\HMI\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\bin\Debug\SimpleHmi.pdb
+D:\ASM\New folder (2)\HMI\HMI\HMI\HMI\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\bin\Debug\Autofac.dll
+D:\ASM\New folder (2)\HMI\HMI\HMI\HMI\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\bin\Debug\Prism.Autofac.Wpf.dll
+D:\ASM\New folder (2)\HMI\HMI\HMI\HMI\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\bin\Debug\Prism.dll
+D:\ASM\New folder (2)\HMI\HMI\HMI\HMI\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\bin\Debug\Prism.Wpf.dll
+D:\ASM\New folder (2)\HMI\HMI\HMI\HMI\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\bin\Debug\SimpleHmi.Infrastructure.dll
+D:\ASM\New folder (2)\HMI\HMI\HMI\HMI\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\bin\Debug\SimpleHmi.PlcService.dll
+D:\ASM\New folder (2)\HMI\HMI\HMI\HMI\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\bin\Debug\System.Windows.Interactivity.dll
+D:\ASM\New folder (2)\HMI\HMI\HMI\HMI\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\bin\Debug\NModbus4.dll
+D:\ASM\New folder (2)\HMI\HMI\HMI\HMI\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\ASM\New folder (2)\HMI\HMI\HMI\HMI\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\bin\Debug\SimpleHmi.Infrastructure.pdb
+D:\ASM\New folder (2)\HMI\HMI\HMI\HMI\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\bin\Debug\SimpleHmi.PlcService.pdb
+D:\ASM\New folder (2)\HMI\HMI\HMI\HMI\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\bin\Debug\Autofac.xml
+D:\ASM\New folder (2)\HMI\HMI\HMI\HMI\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\bin\Debug\Prism.xml
+D:\ASM\New folder (2)\HMI\HMI\HMI\HMI\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\bin\Debug\Prism.Autofac.Wpf.xml
+D:\ASM\New folder (2)\HMI\HMI\HMI\HMI\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\bin\Debug\Prism.Autofac.Wpf.dll.config
+D:\ASM\New folder (2)\HMI\HMI\HMI\HMI\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\bin\Debug\Prism.Wpf.xml
+D:\ASM\New folder (2)\HMI\HMI\HMI\HMI\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\bin\Debug\NModbus4.xml
+D:\ASM\New folder (2)\HMI\HMI\HMI\HMI\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+D:\ASM\New folder (2)\HMI\HMI\HMI\HMI\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+D:\ASM\New folder (2)\HMI\HMI\HMI\HMI\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\obj\Debug\SimpleHmi.csprojAssemblyReference.cache
+D:\ASM\New folder (2)\HMI\HMI\HMI\HMI\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\obj\Debug\Views\HmiStatusBar.g.cs
+D:\ASM\New folder (2)\HMI\HMI\HMI\HMI\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\obj\Debug\Views\LeftMenu.g.cs
+D:\ASM\New folder (2)\HMI\HMI\HMI\HMI\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\obj\Debug\Views\MainPage.g.cs
+D:\ASM\New folder (2)\HMI\HMI\HMI\HMI\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\obj\Debug\Views\MainWindow.g.cs
+D:\ASM\New folder (2)\HMI\HMI\HMI\HMI\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\obj\Debug\Views\SettingsPage.g.cs
+D:\ASM\New folder (2)\HMI\HMI\HMI\HMI\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\obj\Debug\App.g.cs
+D:\ASM\New folder (2)\HMI\HMI\HMI\HMI\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\ASM\New folder (2)\HMI\HMI\HMI\HMI\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\obj\Debug\SimpleHmi_MarkupCompile.cache
+D:\ASM\New folder (2)\HMI\HMI\HMI\HMI\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\obj\Debug\SimpleHmi_MarkupCompile.lref
+D:\ASM\New folder (2)\HMI\HMI\HMI\HMI\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\obj\Debug\Views\HmiStatusBar.baml
+D:\ASM\New folder (2)\HMI\HMI\HMI\HMI\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\obj\Debug\Views\LeftMenu.baml
+D:\ASM\New folder (2)\HMI\HMI\HMI\HMI\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\obj\Debug\Views\MainPage.baml
+D:\ASM\New folder (2)\HMI\HMI\HMI\HMI\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\obj\Debug\Views\MainWindow.baml
+D:\ASM\New folder (2)\HMI\HMI\HMI\HMI\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\obj\Debug\Views\SettingsPage.baml
+D:\ASM\New folder (2)\HMI\HMI\HMI\HMI\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\obj\Debug\SimpleHmi.g.resources
+D:\ASM\New folder (2)\HMI\HMI\HMI\HMI\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\obj\Debug\SimpleHmi.Properties.Resources.resources
+D:\ASM\New folder (2)\HMI\HMI\HMI\HMI\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\obj\Debug\SimpleHmi.csproj.GenerateResource.cache
+D:\ASM\New folder (2)\HMI\HMI\HMI\HMI\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\obj\Debug\SimpleHmi.csproj.CoreCompileInputs.cache
+D:\ASM\New folder (2)\HMI\HMI\HMI\HMI\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\obj\Debug\SimpleHmi.csproj.CopyComplete
+D:\ASM\New folder (2)\HMI\HMI\HMI\HMI\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\obj\Debug\SimpleHmi.exe
+D:\ASM\New folder (2)\HMI\HMI\HMI\HMI\HMI-with-WPF-part-2-Navigation-with-PRISM-master\SimpleHmi\obj\Debug\SimpleHmi.pdb
+D:\ASM\New folder (2)\HMI_Prism\SimpleHmi\bin\Debug\SimpleHmi.exe.config
+D:\ASM\New folder (2)\HMI_Prism\SimpleHmi\bin\Debug\SimpleHmi.exe
+D:\ASM\New folder (2)\HMI_Prism\SimpleHmi\bin\Debug\SimpleHmi.pdb
+D:\ASM\New folder (2)\HMI_Prism\SimpleHmi\bin\Debug\Autofac.dll
+D:\ASM\New folder (2)\HMI_Prism\SimpleHmi\bin\Debug\Prism.Autofac.Wpf.dll
+D:\ASM\New folder (2)\HMI_Prism\SimpleHmi\bin\Debug\Prism.dll
+D:\ASM\New folder (2)\HMI_Prism\SimpleHmi\bin\Debug\Prism.Wpf.dll
+D:\ASM\New folder (2)\HMI_Prism\SimpleHmi\bin\Debug\SimpleHmi.Infrastructure.dll
+D:\ASM\New folder (2)\HMI_Prism\SimpleHmi\bin\Debug\SimpleHmi.PlcService.dll
+D:\ASM\New folder (2)\HMI_Prism\SimpleHmi\bin\Debug\System.Windows.Interactivity.dll
+D:\ASM\New folder (2)\HMI_Prism\SimpleHmi\bin\Debug\NModbus4.dll
+D:\ASM\New folder (2)\HMI_Prism\SimpleHmi\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\ASM\New folder (2)\HMI_Prism\SimpleHmi\bin\Debug\SimpleHmi.Infrastructure.pdb
+D:\ASM\New folder (2)\HMI_Prism\SimpleHmi\bin\Debug\SimpleHmi.PlcService.pdb
+D:\ASM\New folder (2)\HMI_Prism\SimpleHmi\bin\Debug\Autofac.xml
+D:\ASM\New folder (2)\HMI_Prism\SimpleHmi\bin\Debug\Prism.xml
+D:\ASM\New folder (2)\HMI_Prism\SimpleHmi\bin\Debug\Prism.Autofac.Wpf.xml
+D:\ASM\New folder (2)\HMI_Prism\SimpleHmi\bin\Debug\Prism.Autofac.Wpf.dll.config
+D:\ASM\New folder (2)\HMI_Prism\SimpleHmi\bin\Debug\Prism.Wpf.xml
+D:\ASM\New folder (2)\HMI_Prism\SimpleHmi\bin\Debug\NModbus4.xml
+D:\ASM\New folder (2)\HMI_Prism\SimpleHmi\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+D:\ASM\New folder (2)\HMI_Prism\SimpleHmi\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+D:\ASM\New folder (2)\HMI_Prism\SimpleHmi\obj\Debug\SimpleHmi.csprojAssemblyReference.cache
+D:\ASM\New folder (2)\HMI_Prism\SimpleHmi\obj\Debug\Views\HmiStatusBar.g.cs
+D:\ASM\New folder (2)\HMI_Prism\SimpleHmi\obj\Debug\Views\LeftMenu.g.cs
+D:\ASM\New folder (2)\HMI_Prism\SimpleHmi\obj\Debug\Views\MainPage.g.cs
+D:\ASM\New folder (2)\HMI_Prism\SimpleHmi\obj\Debug\Views\MainWindow.g.cs
+D:\ASM\New folder (2)\HMI_Prism\SimpleHmi\obj\Debug\Views\SettingsPage.g.cs
+D:\ASM\New folder (2)\HMI_Prism\SimpleHmi\obj\Debug\App.g.cs
+D:\ASM\New folder (2)\HMI_Prism\SimpleHmi\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\ASM\New folder (2)\HMI_Prism\SimpleHmi\obj\Debug\SimpleHmi_MarkupCompile.cache
+D:\ASM\New folder (2)\HMI_Prism\SimpleHmi\obj\Debug\SimpleHmi_MarkupCompile.lref
+D:\ASM\New folder (2)\HMI_Prism\SimpleHmi\obj\Debug\Views\HmiStatusBar.baml
+D:\ASM\New folder (2)\HMI_Prism\SimpleHmi\obj\Debug\Views\LeftMenu.baml
+D:\ASM\New folder (2)\HMI_Prism\SimpleHmi\obj\Debug\Views\MainPage.baml
+D:\ASM\New folder (2)\HMI_Prism\SimpleHmi\obj\Debug\Views\MainWindow.baml
+D:\ASM\New folder (2)\HMI_Prism\SimpleHmi\obj\Debug\Views\SettingsPage.baml
+D:\ASM\New folder (2)\HMI_Prism\SimpleHmi\obj\Debug\SimpleHmi.g.resources
+D:\ASM\New folder (2)\HMI_Prism\SimpleHmi\obj\Debug\SimpleHmi.Properties.Resources.resources
+D:\ASM\New folder (2)\HMI_Prism\SimpleHmi\obj\Debug\SimpleHmi.csproj.GenerateResource.cache
+D:\ASM\New folder (2)\HMI_Prism\SimpleHmi\obj\Debug\SimpleHmi.csproj.CoreCompileInputs.cache
+D:\ASM\New folder (2)\HMI_Prism\SimpleHmi\obj\Debug\SimpleHmi.csproj.CopyComplete
+D:\ASM\New folder (2)\HMI_Prism\SimpleHmi\obj\Debug\SimpleHmi.exe
+D:\ASM\New folder (2)\HMI_Prism\SimpleHmi\obj\Debug\SimpleHmi.pdb
+D:\ASM\New folder (2)\HMI_Prism\SimpleHmi\obj\Debug\App.baml
+D:\ASM\New folder (2)\HMI_Prism\SimpleHmi\obj\Debug\Resources\RoundButton.baml
+D:\ASM\New folder (2)\HMI_Prism\SimpleHmi\obj\Debug\Resources\ToggelButton.baml
+D:\ASM\New folder (2)\HMI_Prism\SimpleHmi\bin\Debug\Microsoft.Expression.Interactions.dll
+D:\ASM\HMI-main\HMI-main\SimpleHmi\bin\Debug\SimpleHmi.exe.config
+D:\ASM\HMI-main\HMI-main\SimpleHmi\bin\Debug\SimpleHmi.exe
+D:\ASM\HMI-main\HMI-main\SimpleHmi\bin\Debug\SimpleHmi.pdb
+D:\ASM\HMI-main\HMI-main\SimpleHmi\bin\Debug\Autofac.dll
+D:\ASM\HMI-main\HMI-main\SimpleHmi\bin\Debug\Microsoft.Expression.Interactions.dll
+D:\ASM\HMI-main\HMI-main\SimpleHmi\bin\Debug\Prism.Autofac.Wpf.dll
+D:\ASM\HMI-main\HMI-main\SimpleHmi\bin\Debug\Prism.dll
+D:\ASM\HMI-main\HMI-main\SimpleHmi\bin\Debug\Prism.Wpf.dll
+D:\ASM\HMI-main\HMI-main\SimpleHmi\bin\Debug\SimpleHmi.Infrastructure.dll
+D:\ASM\HMI-main\HMI-main\SimpleHmi\bin\Debug\SimpleHmi.PlcService.dll
+D:\ASM\HMI-main\HMI-main\SimpleHmi\bin\Debug\System.Windows.Interactivity.dll
+D:\ASM\HMI-main\HMI-main\SimpleHmi\bin\Debug\NModbus4.dll
+D:\ASM\HMI-main\HMI-main\SimpleHmi\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\ASM\HMI-main\HMI-main\SimpleHmi\bin\Debug\SimpleHmi.Infrastructure.pdb
+D:\ASM\HMI-main\HMI-main\SimpleHmi\bin\Debug\SimpleHmi.PlcService.pdb
+D:\ASM\HMI-main\HMI-main\SimpleHmi\bin\Debug\Autofac.xml
+D:\ASM\HMI-main\HMI-main\SimpleHmi\bin\Debug\Prism.xml
+D:\ASM\HMI-main\HMI-main\SimpleHmi\bin\Debug\Prism.Autofac.Wpf.xml
+D:\ASM\HMI-main\HMI-main\SimpleHmi\bin\Debug\Prism.Autofac.Wpf.dll.config
+D:\ASM\HMI-main\HMI-main\SimpleHmi\bin\Debug\Prism.Wpf.xml
+D:\ASM\HMI-main\HMI-main\SimpleHmi\bin\Debug\NModbus4.xml
+D:\ASM\HMI-main\HMI-main\SimpleHmi\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+D:\ASM\HMI-main\HMI-main\SimpleHmi\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+D:\ASM\HMI-main\HMI-main\SimpleHmi\obj\Debug\SimpleHmi.csprojAssemblyReference.cache
+D:\ASM\HMI-main\HMI-main\SimpleHmi\obj\Debug\Views\HmiStatusBar.g.cs
+D:\ASM\HMI-main\HMI-main\SimpleHmi\obj\Debug\Views\LeftMenu.g.cs
+D:\ASM\HMI-main\HMI-main\SimpleHmi\obj\Debug\Views\MainPage.g.cs
+D:\ASM\HMI-main\HMI-main\SimpleHmi\obj\Debug\Views\MainWindow.g.cs
+D:\ASM\HMI-main\HMI-main\SimpleHmi\obj\Debug\Views\SettingsPage.g.cs
+D:\ASM\HMI-main\HMI-main\SimpleHmi\obj\Debug\App.g.cs
+D:\ASM\HMI-main\HMI-main\SimpleHmi\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\ASM\HMI-main\HMI-main\SimpleHmi\obj\Debug\SimpleHmi_MarkupCompile.cache
+D:\ASM\HMI-main\HMI-main\SimpleHmi\obj\Debug\SimpleHmi_MarkupCompile.lref
+D:\ASM\HMI-main\HMI-main\SimpleHmi\obj\Debug\App.baml
+D:\ASM\HMI-main\HMI-main\SimpleHmi\obj\Debug\Resources\RoundButton.baml
+D:\ASM\HMI-main\HMI-main\SimpleHmi\obj\Debug\Resources\ToggelButton.baml
+D:\ASM\HMI-main\HMI-main\SimpleHmi\obj\Debug\Views\HmiStatusBar.baml
+D:\ASM\HMI-main\HMI-main\SimpleHmi\obj\Debug\Views\LeftMenu.baml
+D:\ASM\HMI-main\HMI-main\SimpleHmi\obj\Debug\Views\MainPage.baml
+D:\ASM\HMI-main\HMI-main\SimpleHmi\obj\Debug\Views\MainWindow.baml
+D:\ASM\HMI-main\HMI-main\SimpleHmi\obj\Debug\Views\SettingsPage.baml
+D:\ASM\HMI-main\HMI-main\SimpleHmi\obj\Debug\SimpleHmi.g.resources
+D:\ASM\HMI-main\HMI-main\SimpleHmi\obj\Debug\SimpleHmi.Properties.Resources.resources
+D:\ASM\HMI-main\HMI-main\SimpleHmi\obj\Debug\SimpleHmi.csproj.GenerateResource.cache
+D:\ASM\HMI-main\HMI-main\SimpleHmi\obj\Debug\SimpleHmi.csproj.CoreCompileInputs.cache
+D:\ASM\HMI-main\HMI-main\SimpleHmi\obj\Debug\SimpleHmi.csproj.CopyComplete
+D:\ASM\HMI-main\HMI-main\SimpleHmi\obj\Debug\SimpleHmi.exe
+D:\ASM\HMI-main\HMI-main\SimpleHmi\obj\Debug\SimpleHmi.pdb
+D:\ASM\New folder (2)\HMI-master\HMI-master\SimpleHmi\bin\Debug\SimpleHmi.exe.config
+D:\ASM\New folder (2)\HMI-master\HMI-master\SimpleHmi\bin\Debug\SimpleHmi.exe
+D:\ASM\New folder (2)\HMI-master\HMI-master\SimpleHmi\bin\Debug\SimpleHmi.pdb
+D:\ASM\New folder (2)\HMI-master\HMI-master\SimpleHmi\bin\Debug\Autofac.dll
+D:\ASM\New folder (2)\HMI-master\HMI-master\SimpleHmi\bin\Debug\Microsoft.Expression.Interactions.dll
+D:\ASM\New folder (2)\HMI-master\HMI-master\SimpleHmi\bin\Debug\Prism.Autofac.Wpf.dll
+D:\ASM\New folder (2)\HMI-master\HMI-master\SimpleHmi\bin\Debug\Prism.dll
+D:\ASM\New folder (2)\HMI-master\HMI-master\SimpleHmi\bin\Debug\Prism.Wpf.dll
+D:\ASM\New folder (2)\HMI-master\HMI-master\SimpleHmi\bin\Debug\SimpleHmi.Infrastructure.dll
+D:\ASM\New folder (2)\HMI-master\HMI-master\SimpleHmi\bin\Debug\SimpleHmi.PlcService.dll
+D:\ASM\New folder (2)\HMI-master\HMI-master\SimpleHmi\bin\Debug\System.Windows.Interactivity.dll
+D:\ASM\New folder (2)\HMI-master\HMI-master\SimpleHmi\bin\Debug\NModbus4.dll
+D:\ASM\New folder (2)\HMI-master\HMI-master\SimpleHmi\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\ASM\New folder (2)\HMI-master\HMI-master\SimpleHmi\bin\Debug\SimpleHmi.Infrastructure.pdb
+D:\ASM\New folder (2)\HMI-master\HMI-master\SimpleHmi\bin\Debug\SimpleHmi.PlcService.pdb
+D:\ASM\New folder (2)\HMI-master\HMI-master\SimpleHmi\bin\Debug\Autofac.xml
+D:\ASM\New folder (2)\HMI-master\HMI-master\SimpleHmi\bin\Debug\Prism.xml
+D:\ASM\New folder (2)\HMI-master\HMI-master\SimpleHmi\bin\Debug\Prism.Autofac.Wpf.xml
+D:\ASM\New folder (2)\HMI-master\HMI-master\SimpleHmi\bin\Debug\Prism.Autofac.Wpf.dll.config
+D:\ASM\New folder (2)\HMI-master\HMI-master\SimpleHmi\bin\Debug\Prism.Wpf.xml
+D:\ASM\New folder (2)\HMI-master\HMI-master\SimpleHmi\bin\Debug\NModbus4.xml
+D:\ASM\New folder (2)\HMI-master\HMI-master\SimpleHmi\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+D:\ASM\New folder (2)\HMI-master\HMI-master\SimpleHmi\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+D:\ASM\New folder (2)\HMI-master\HMI-master\SimpleHmi\obj\Debug\SimpleHmi.csprojAssemblyReference.cache
+D:\ASM\New folder (2)\HMI-master\HMI-master\SimpleHmi\obj\Debug\Views\HmiStatusBar.g.cs
+D:\ASM\New folder (2)\HMI-master\HMI-master\SimpleHmi\obj\Debug\Views\LeftMenu.g.cs
+D:\ASM\New folder (2)\HMI-master\HMI-master\SimpleHmi\obj\Debug\Views\MainPage.g.cs
+D:\ASM\New folder (2)\HMI-master\HMI-master\SimpleHmi\obj\Debug\Views\MainWindow.g.cs
+D:\ASM\New folder (2)\HMI-master\HMI-master\SimpleHmi\obj\Debug\Views\SettingsPage.g.cs
+D:\ASM\New folder (2)\HMI-master\HMI-master\SimpleHmi\obj\Debug\App.g.cs
+D:\ASM\New folder (2)\HMI-master\HMI-master\SimpleHmi\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\ASM\New folder (2)\HMI-master\HMI-master\SimpleHmi\obj\Debug\SimpleHmi_MarkupCompile.cache
+D:\ASM\New folder (2)\HMI-master\HMI-master\SimpleHmi\obj\Debug\SimpleHmi_MarkupCompile.lref
+D:\ASM\New folder (2)\HMI-master\HMI-master\SimpleHmi\obj\Debug\App.baml
+D:\ASM\New folder (2)\HMI-master\HMI-master\SimpleHmi\obj\Debug\Resources\RoundButton.baml
+D:\ASM\New folder (2)\HMI-master\HMI-master\SimpleHmi\obj\Debug\Resources\ToggelButton.baml
+D:\ASM\New folder (2)\HMI-master\HMI-master\SimpleHmi\obj\Debug\Views\HmiStatusBar.baml
+D:\ASM\New folder (2)\HMI-master\HMI-master\SimpleHmi\obj\Debug\Views\LeftMenu.baml
+D:\ASM\New folder (2)\HMI-master\HMI-master\SimpleHmi\obj\Debug\Views\MainPage.baml
+D:\ASM\New folder (2)\HMI-master\HMI-master\SimpleHmi\obj\Debug\Views\MainWindow.baml
+D:\ASM\New folder (2)\HMI-master\HMI-master\SimpleHmi\obj\Debug\Views\SettingsPage.baml
+D:\ASM\New folder (2)\HMI-master\HMI-master\SimpleHmi\obj\Debug\SimpleHmi.g.resources
+D:\ASM\New folder (2)\HMI-master\HMI-master\SimpleHmi\obj\Debug\SimpleHmi.Properties.Resources.resources
+D:\ASM\New folder (2)\HMI-master\HMI-master\SimpleHmi\obj\Debug\SimpleHmi.csproj.GenerateResource.cache
+D:\ASM\New folder (2)\HMI-master\HMI-master\SimpleHmi\obj\Debug\SimpleHmi.csproj.CoreCompileInputs.cache
+D:\ASM\New folder (2)\HMI-master\HMI-master\SimpleHmi\obj\Debug\SimpleHmi.csproj.CopyComplete
+D:\ASM\New folder (2)\HMI-master\HMI-master\SimpleHmi\obj\Debug\SimpleHmi.exe
+D:\ASM\New folder (2)\HMI-master\HMI-master\SimpleHmi\obj\Debug\SimpleHmi.pdb
