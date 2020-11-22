@@ -124,9 +124,8 @@ namespace SimpleHmi.PlcService
         {
             await Task.Run(() =>
             {                
-                _master.WriteSingleCoilAsync(1, 0, true);
+                _master.WriteSingleCoilAsync(16, 0, true);
                 MachineState = MachineState.Auto;
-
                 Thread.Sleep(30);
 
 
@@ -137,7 +136,7 @@ namespace SimpleHmi.PlcService
             await Task.Run(() =>
             {
           
-                _master.WriteSingleCoilAsync(1, 0, false);
+                _master.WriteSingleCoilAsync(16, 0, false);
                 MachineState = MachineState.Manual;
                 Thread.Sleep(30);
 
@@ -203,44 +202,44 @@ namespace SimpleHmi.PlcService
                     {
                         bool[] readCoils = _master.ReadCoils(1, 0, 50);
 
-
-                        RoterMoveing = readCoils[30];
-                        RoteryPosMoveing = readCoils[31];
-                        ShorterMoveing = readCoils[32];
-
-
-                        MainGripperState = readCoils[14];
+                        RoterMoveing = readCoils[17];
+                        RoteryPosMoveing = readCoils[19];
+                        ShorterMoveing = readCoils[19];
+                                                
                         ShorterGripperState = readCoils[12];
                         ShorterCylinderState = readCoils[13];
+                        MainGripperState = readCoils[14];
 
-                        AligmentCheck = readCoils[20];
-                        CrackCheck = readCoils[21];
-                        DustCheck = readCoils[22];
-                        TestResultState = readCoils[20];
-                        VisiontestComplete = readCoils[21];
+
+                        AligmentCheck = readCoils[27];
+                        CrackCheck = readCoils[28];
+                        DustCheck = readCoils[29];
+                        TestResultState = readCoils[30];
+                        VisiontestComplete = readCoils[31];
 
 
 
                         ushort[] readHoldingRegister = _master.ReadHoldingRegisters(1, 0, 50);
                         
-                        InletPumpSpeed = Convert.ToInt32(readHoldingRegister[10]);
-                        OutletPumpSpeed = Convert.ToInt32(readHoldingRegister[12]);
+                        InletPumpSpeed = Convert.ToInt32(readHoldingRegister[40]);
+                        OutletPumpSpeed = Convert.ToInt32(readHoldingRegister[41]);
+
                         ReadRoterJogSpeed = Convert.ToInt32(readHoldingRegister[1]);
                         ReadRoterPosSpeed = Convert.ToInt32(readHoldingRegister[2]);
                         ReadRoterCmdPos = Convert.ToInt32(readHoldingRegister[3]);
 
                         ReadRoteryPosJogSpeed = Convert.ToInt32(readHoldingRegister[7]);
-                        ReadRoteryPosPosSpeed = Convert.ToInt32(readHoldingRegister[8]);
-                        ReadRoteryPosCmdPos = Convert.ToInt32(readHoldingRegister[9]);
+                        ReadRoteryPosPosSpeed = Convert.ToInt32(readHoldingRegister[6]);
+                        ReadRoteryPosCmdPos = Convert.ToInt32(readHoldingRegister[5]);
 
                         ReadShorterJogSpeed = Convert.ToInt32(readHoldingRegister[12]);
                         ReadShorterPosSpeed = Convert.ToInt32(readHoldingRegister[13]);
                         ReadShorterCmdPos = Convert.ToInt32(readHoldingRegister[14]);
 
-                        ProductselectedCount = Convert.ToInt32(readHoldingRegister[30]);
-                        TotalPartCount = Convert.ToInt32(readHoldingRegister[31]);
-                        GoodPartCount = Convert.ToInt32(readHoldingRegister[32]);
-                        NotGoodPartCount = Convert.ToInt32(readHoldingRegister[33]);
+                        ProductselectedCount = Convert.ToInt32(readHoldingRegister[28]);
+                        TotalPartCount = Convert.ToInt32(readHoldingRegister[29]);
+                        GoodPartCount = Convert.ToInt32(readHoldingRegister[30]);
+                        NotGoodPartCount = Convert.ToInt32(readHoldingRegister[31]);
 
 
 
@@ -272,8 +271,8 @@ namespace SimpleHmi.PlcService
         {
             await Task.Run(() =>
             {
-                Thread.Sleep(30);
-                _master.WriteSingleCoilAsync(1, 1, false);
+               
+                _master.WriteSingleCoilAsync(1, 2, false);
 
             });
         }
@@ -282,7 +281,7 @@ namespace SimpleHmi.PlcService
         {
             await Task.Run(() =>
             {
-                Thread.Sleep(30);
+                Thread.Sleep(10);
                 _master.WriteSingleCoilAsync(1, 2, true);
 
             });
@@ -292,7 +291,7 @@ namespace SimpleHmi.PlcService
         {
             await Task.Run(() =>
             {
-                Thread.Sleep(30);
+                
                 _master.WriteSingleCoilAsync(1, 2, false);
 
             });
@@ -302,9 +301,9 @@ namespace SimpleHmi.PlcService
         {
             await Task.Run(() =>
             {
-                Thread.Sleep(30);
+                Thread.Sleep(10);
                 _master.WriteSingleCoilAsync(1, 3, true);
-                Thread.Sleep(100);
+                Thread.Sleep(150);
                 _master.WriteSingleCoilAsync(1, 3, false);
 
             });
@@ -338,7 +337,7 @@ namespace SimpleHmi.PlcService
         {
             await Task.Run(() =>
             {
-                Thread.Sleep(30);
+                Thread.Sleep(10);
                 _master.WriteSingleCoilAsync(1, 5, true);
 
             });
@@ -348,7 +347,7 @@ namespace SimpleHmi.PlcService
         {
             await Task.Run(() =>
             {
-                Thread.Sleep(30);
+                
                 _master.WriteSingleCoilAsync(1, 5, false);
 
             });
@@ -358,7 +357,7 @@ namespace SimpleHmi.PlcService
         {
             await Task.Run(() =>
             {
-                Thread.Sleep(30);
+                Thread.Sleep(10);
                 _master.WriteSingleCoilAsync(1, 6, true);
 
             });
@@ -368,7 +367,7 @@ namespace SimpleHmi.PlcService
         {
             await Task.Run(() =>
             {
-                Thread.Sleep(30);
+                
                 _master.WriteSingleCoilAsync(1, 6, false);
 
             });
@@ -378,9 +377,9 @@ namespace SimpleHmi.PlcService
         {
             await Task.Run(() =>
             {
-                Thread.Sleep(30);
+                Thread.Sleep(10);
                 _master.WriteSingleCoilAsync(1, 7, true);
-                Thread.Sleep(100);
+                Thread.Sleep(150);
                 _master.WriteSingleCoilAsync(1, 7, false);
 
             });
@@ -398,7 +397,7 @@ namespace SimpleHmi.PlcService
         {
             return Task.Run(() => {
                 ushort Speed = Convert.ToUInt16(RoteryPosPositioningSpeed);
-                _master.WriteSingleRegisterAsync(8, Speed);
+                _master.WriteSingleRegisterAsync(6, Speed);
             });
         }
 
@@ -406,7 +405,7 @@ namespace SimpleHmi.PlcService
         {
             return Task.Run(() => {
                 ushort Position = Convert.ToUInt16(RoteryPosCommendposition);
-                _master.WriteSingleRegisterAsync(9, Position);
+                _master.WriteSingleRegisterAsync(5, Position);
             });
         }
 
@@ -415,7 +414,7 @@ namespace SimpleHmi.PlcService
         {
             await Task.Run(() =>
             {
-                Thread.Sleep(30);
+                Thread.Sleep(10);
                 _master.WriteSingleCoilAsync(1, 9, true);
 
             });
@@ -425,7 +424,7 @@ namespace SimpleHmi.PlcService
         {
             await Task.Run(() =>
             {
-                Thread.Sleep(30);
+                
                 _master.WriteSingleCoilAsync(1, 9, false);
 
             });
@@ -435,7 +434,7 @@ namespace SimpleHmi.PlcService
         {
             await Task.Run(() =>
             {
-                Thread.Sleep(30);
+                Thread.Sleep(10);
                 _master.WriteSingleCoilAsync(1, 10, true);
 
             });
@@ -457,7 +456,7 @@ namespace SimpleHmi.PlcService
             {
                 Thread.Sleep(30);
                 _master.WriteSingleCoilAsync(1, 11, true);
-                Thread.Sleep(100);
+                Thread.Sleep(150);
                 _master.WriteSingleCoilAsync(1, 11, false);
 
             });
@@ -487,25 +486,7 @@ namespace SimpleHmi.PlcService
             });
         }
 
-        public async Task WriteMainGripperStartCommand()
-        {
-            await Task.Run(() =>
-            {
-                Thread.Sleep(30);
-                _master.WriteSingleCoilAsync(1, 14, true);
-
-            });
-        }
-
-        public async Task WriteMainGripperStopCommand()
-        {
-            await Task.Run(() =>
-            {
-                Thread.Sleep(30);
-                _master.WriteSingleCoilAsync(1, 14, false);
-
-            });
-        }
+    
 
 
         public async Task WriteShorterGripperStartCommand()
@@ -548,15 +529,33 @@ namespace SimpleHmi.PlcService
 
             });
         }
+        public async Task WriteMainGripperStartCommand()
+        {
+            await Task.Run(() =>
+            {
+                Thread.Sleep(30);
+                _master.WriteSingleCoilAsync(1, 14, true);
 
+            });
+        }
+
+        public async Task WriteMainGripperStopCommand()
+        {
+            await Task.Run(() =>
+            {
+                Thread.Sleep(30);
+                _master.WriteSingleCoilAsync(1, 14, false);
+
+            });
+        }
 
         public async Task WriteShorterPostionHomingCommand()
         {
             await Task.Run(() =>
             {
-                Thread.Sleep(30);
+                Thread.Sleep(10);
                 _master.WriteSingleCoilAsync(1, 8, true);
-                Thread.Sleep(100);
+                Thread.Sleep(150);
                 _master.WriteSingleCoilAsync(1, 8, false);
 
             });
@@ -566,9 +565,9 @@ namespace SimpleHmi.PlcService
         {
             await Task.Run(() =>
             {
-                Thread.Sleep(30);
+                Thread.Sleep(10);
                 _master.WriteSingleCoilAsync(1, 4, true);
-                Thread.Sleep(100);
+                Thread.Sleep(150);
                 _master.WriteSingleCoilAsync(1, 4, false);
 
             });
@@ -578,25 +577,14 @@ namespace SimpleHmi.PlcService
         {
             await Task.Run(() =>
             {
-                Thread.Sleep(30);
+                Thread.Sleep(10);
                 _master.WriteSingleCoilAsync(1, 0, true);
-                Thread.Sleep(100);
+                Thread.Sleep(150);
                 _master.WriteSingleCoilAsync(1, 0, false);
 
             });
         }
 
-        public async Task WriteInitializationCommand()
-        {
-            await Task.Run(() =>
-            {
-                Thread.Sleep(30);
-                _master.WriteSingleCoilAsync(1, 23, true);
-                Thread.Sleep(100);
-                _master.WriteSingleCoilAsync(1, 23, false);
-
-            });
-        }
 
         public async Task WriteErrorResetCommand()
         {
@@ -621,8 +609,7 @@ namespace SimpleHmi.PlcService
 
             });
         }
-
-        public async Task WriteAlignmentTestCommand()
+        public async Task WriteInitializationCommand()
         {
             await Task.Run(() =>
             {
@@ -634,15 +621,27 @@ namespace SimpleHmi.PlcService
             });
         }
 
+        public async Task WriteAlignmentTestCommand()
+        {
+            await Task.Run(() =>
+            {
+                Thread.Sleep(10);
+                _master.WriteSingleCoilAsync(1, 24, true);
+                Thread.Sleep(150);
+                _master.WriteSingleCoilAsync(1, 24, false);
+
+            });
+        }
+
 
         public async Task WriteCrackCheckCommand()
         {
             await Task.Run(() =>
             {
-                Thread.Sleep(30);
-                _master.WriteSingleCoilAsync(1, 24, true);
-                Thread.Sleep(100);
-                _master.WriteSingleCoilAsync(1, 24, false);
+                Thread.Sleep(10);
+                _master.WriteSingleCoilAsync(1, 25, true);
+                Thread.Sleep(150);
+                _master.WriteSingleCoilAsync(1, 25, false);
 
             });
         }
@@ -651,10 +650,10 @@ namespace SimpleHmi.PlcService
         {
             await Task.Run(() =>
             {
-                Thread.Sleep(30);
-                _master.WriteSingleCoilAsync(1, 25, true);
-                Thread.Sleep(100);
-                _master.WriteSingleCoilAsync(1, 25, false);
+                Thread.Sleep(10);
+                _master.WriteSingleCoilAsync(1, 26, true);
+                Thread.Sleep(150);
+                _master.WriteSingleCoilAsync(1, 26, false);
 
             });
         }
@@ -665,7 +664,7 @@ namespace SimpleHmi.PlcService
             await Task.Run(() =>
             {
                 Thread.Sleep(30);
-                _master.WriteSingleCoilAsync(1, 20, true);
+                _master.WriteSingleCoilAsync(1, 27, true);
 
             });
         }
@@ -675,7 +674,7 @@ namespace SimpleHmi.PlcService
             await Task.Run(() =>
             {
                 Thread.Sleep(30);
-                _master.WriteSingleCoilAsync(1, 20, false);
+                _master.WriteSingleCoilAsync(1, 27, false);
 
             });
         }
@@ -685,7 +684,7 @@ namespace SimpleHmi.PlcService
             await Task.Run(() =>
             {
                 Thread.Sleep(30);
-                _master.WriteSingleCoilAsync(1, 21, true);
+                _master.WriteSingleCoilAsync(1,28, true);
 
             });
         }
@@ -695,7 +694,7 @@ namespace SimpleHmi.PlcService
             await Task.Run(() =>
             {
                 Thread.Sleep(30);
-                _master.WriteSingleCoilAsync(1, 21, false);
+                _master.WriteSingleCoilAsync(1, 28, false);
 
             });
         }
@@ -705,7 +704,7 @@ namespace SimpleHmi.PlcService
             await Task.Run(() =>
             {
                 Thread.Sleep(30);
-                _master.WriteSingleCoilAsync(1, 22, true);
+                _master.WriteSingleCoilAsync(1, 29, true);
 
             });
         }
@@ -715,7 +714,7 @@ namespace SimpleHmi.PlcService
             await Task.Run(() =>
             {
                 Thread.Sleep(30);
-                _master.WriteSingleCoilAsync(1, 22, false);
+                _master.WriteSingleCoilAsync(1, 29, false);
 
             });
         }

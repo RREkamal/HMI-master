@@ -52,3 +52,12 @@ D:\ASM\HMI-main\HMI-main\SimpleHmi.PlcService\obj\Debug\SimpleHmi.PlcService.csp
 D:\ASM\HMI-main\HMI-main\SimpleHmi.PlcService\obj\Debug\SimpleHmi.PlcService.csproj.CopyComplete
 D:\ASM\HMI-main\HMI-main\SimpleHmi.PlcService\obj\Debug\SimpleHmi.PlcService.dll
 D:\ASM\HMI-main\HMI-main\SimpleHmi.PlcService\obj\Debug\SimpleHmi.PlcService.pdb
+D:\ASM\New folder (2)\HMI-master\HMI-master\SimpleHmi.PlcService\bin\Debug\SimpleHmi.PlcService.dll
+D:\ASM\New folder (2)\HMI-master\HMI-master\SimpleHmi.PlcService\bin\Debug\SimpleHmi.PlcService.pdb
+D:\ASM\New folder (2)\HMI-master\HMI-master\SimpleHmi.PlcService\bin\Debug\NModbus4.dll
+D:\ASM\New folder (2)\HMI-master\HMI-master\SimpleHmi.PlcService\bin\Debug\NModbus4.xml
+D:\ASM\New folder (2)\HMI-master\HMI-master\SimpleHmi.PlcService\obj\Debug\SimpleHmi.PlcService.csprojAssemblyReference.cache
+D:\ASM\New folder (2)\HMI-master\HMI-master\SimpleHmi.PlcService\obj\Debug\SimpleHmi.PlcService.csproj.CoreCompileInputs.cache
+D:\ASM\New folder (2)\HMI-master\HMI-master\SimpleHmi.PlcService\obj\Debug\SimpleHmi.PlcService.csproj.CopyComplete
+D:\ASM\New folder (2)\HMI-master\HMI-master\SimpleHmi.PlcService\obj\Debug\SimpleHmi.PlcService.dll
+D:\ASM\New folder (2)\HMI-master\HMI-master\SimpleHmi.PlcService\obj\Debug\SimpleHmi.PlcService.pdb
