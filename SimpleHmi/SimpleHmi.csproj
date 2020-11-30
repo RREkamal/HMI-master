@@ -99,6 +99,16 @@
     <Compile Include="Designer\DesignMainPageViewModel.cs" />
     <Compile Include="Designer\DesignPlcService.cs" />
     <Compile Include="Designer\DesignSettingsPageViewModel.cs" />
+    <Compile Include="Properties\Mainpage.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Mainpage.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\SettingPage.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>SettingPage.settings</DependentUpon>
+    </Compile>
     <Compile Include="ViewModels\HmiStatusBarViewModel.cs" />
     <Compile Include="ViewModels\LeftMenuViewModel.cs" />
     <Compile Include="ViewModels\MainPageViewModel.cs" />
@@ -173,6 +183,14 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="packages.config" />
+    <None Include="Properties\Mainpage.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Mainpage.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Properties\SettingPage.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>SettingPage.Designer.cs</LastGenOutput>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

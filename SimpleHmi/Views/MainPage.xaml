@@ -6,7 +6,7 @@
              xmlns:local="clr-namespace:SimpleHmi.Views"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:vm="clr-namespace:SimpleHmi.ViewModels"
-              xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+             xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
              xmlns:ei="clr-namespace:Microsoft.Expression.Interactivity.Core;assembly=Microsoft.Expression.Interactions"
              xmlns:prism="http://prismlibrary.com/"
              prism:ViewModelLocator.AutoWireViewModel="True"
@@ -86,7 +86,7 @@
                  HorizontalAlignment="Center"
                  VerticalAlignment="Top" 
                  FontSize="16"
-                 Text="{Binding RoterJogSpeed, Delay=10, Mode=TwoWay, UpdateSourceTrigger=LostFocus }" FontWeight="SemiBold" />
+                 Text="{Binding RoterJogSpeed, Delay=10, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" FontWeight="SemiBold" />
             <Button
             Style="{StaticResource RoundButtonTemplate}"
             BorderBrush="Red" x:Name="button"  Content="Jogging +" HorizontalAlignment="Center" Margin="0,5,0,0" VerticalAlignment="Top" Width="306" Height="36"  TabIndex="2" Background="{Binding RoterMoveingState, Converter={StaticResource BooleanToBrushConverter}}" Foreground="Gold" BorderThickness="2"  >
@@ -119,7 +119,7 @@
                  HorizontalAlignment="Center"
                  VerticalAlignment="Top" 
                  FontSize="16"
-                 Text="{Binding RoterPositioningSpeed, Delay=10, Mode=TwoWay, UpdateSourceTrigger=LostFocus}"  FontWeight="SemiBold" />
+                 Text="{Binding RoterPositioningSpeed, Delay=10, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"  FontWeight="SemiBold" />
             <Label Content="Rotary Axis Commend Position(degree)" HorizontalAlignment="Left" Margin="5,5,0,0"  VerticalAlignment="Top" Width="auto" Height="auto" FontSize="14" HorizontalContentAlignment="Center" Padding="0" />
             <TextBox Width="307"
                  Height="auto"
@@ -127,7 +127,7 @@
                  HorizontalAlignment="Center"
                  VerticalAlignment="Top" 
                  FontSize="16"
-                 Text="{Binding RoterCommendposition, Delay=10, Mode=TwoWay, UpdateSourceTrigger=LostFocus}"  FontWeight="SemiBold" />
+                 Text="{Binding RoterCommendposition, Delay=10, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"  FontWeight="SemiBold" />
 
             <Button
             Style="{StaticResource RoundButtonTemplate}"
@@ -145,7 +145,7 @@
                  HorizontalAlignment="Center"
                  VerticalAlignment="Top" 
                  FontSize="16"
-                 Text="{Binding RoteryPosJogSpeed, Delay=10, Mode=TwoWay, UpdateSourceTrigger=LostFocus}" FontWeight="SemiBold" />
+                 Text="{Binding RoteryPosJogSpeed, Delay=10, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" FontWeight="SemiBold" />
             <Button
             Style="{StaticResource RoundButtonTemplate}"
             BorderBrush="Red" x:Name="button_Rotery_Position_Positive"  Content="Jogging +" HorizontalAlignment="Center" Margin="0,5,0,0" VerticalAlignment="Top" Width="306" Height="36"  TabIndex="2" Background="{Binding RoteryPosMoveing, Converter={StaticResource BooleanToBrushConverter}}" Foreground="Gold" BorderThickness="2"  >
@@ -186,7 +186,7 @@
                  HorizontalAlignment="Center"
                  VerticalAlignment="Top" 
                  FontSize="16"
-                 Text="{Binding RoteryPosCommendposition, Delay=10, Mode=TwoWay, UpdateSourceTrigger=LostFocus}"  FontWeight="SemiBold" />
+                 Text="{Binding RoteryPosCommendposition, Delay=10, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"  FontWeight="SemiBold" />
 
             <Button
             Style="{StaticResource RoundButtonTemplate}"
@@ -204,7 +204,7 @@
                  HorizontalAlignment="Center"
                  VerticalAlignment="Top" 
                  FontSize="16"
-                 Text="{Binding ShorterJogSpeed, Delay=10, Mode=TwoWay, UpdateSourceTrigger=LostFocus}" FontWeight="SemiBold" />
+                 Text="{Binding ShorterJogSpeed, Delay=10, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" FontWeight="SemiBold" />
             <Button
             Style="{StaticResource RoundButtonTemplate}"
             BorderBrush="Red" x:Name="button_Shorter_Positive"  Content="Jogging +" HorizontalAlignment="Center" Margin="0,5,0,0" VerticalAlignment="Top" Width="306" Height="36"  TabIndex="2" Background="{Binding ShorterMoveing, Converter={StaticResource BooleanToBrushConverter}}" Foreground="Gold" BorderThickness="2"  >
@@ -237,17 +237,16 @@
                  HorizontalAlignment="Center"
                  VerticalAlignment="Top" 
                  FontSize="16"
-                 Text="{Binding ShorterPositioningSpeed, Delay=10, Mode=TwoWay, UpdateSourceTrigger=LostFocus}"  FontWeight="SemiBold" />
+                 Text="{Binding ShorterPositioningSpeed, Delay=10, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"  FontWeight="SemiBold" />
             <Label Content="Shorter Axis Commend Position(mm)" HorizontalAlignment="Left" Margin="5,5,0,0"  VerticalAlignment="Top" Width="auto" Height="auto" FontSize="14" HorizontalContentAlignment="Center" Padding="0" />
             <TextBox Width="307"
                  Height="auto"
                  Margin="0,5,0,0"
-                 MaxLength="3"
-                     
+                 MaxLength="3"  
                  HorizontalAlignment="Center"
                  VerticalAlignment="Top" 
                  FontSize="16"
-                 Text="{Binding ShorterCommendposition, Delay=10, Mode=TwoWay, UpdateSourceTrigger=LostFocus}"  FontWeight="SemiBold" />
+                 Text="{Binding ShorterCommendposition, Delay=10, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"  FontWeight="SemiBold" />
 
             <Button
             Style="{StaticResource RoundButtonTemplate}"

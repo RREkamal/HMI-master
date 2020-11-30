@@ -30,9 +30,7 @@ namespace SimpleHmi.PlcService
         Task WriteRoterPositioningSpeed(short RoterPositioningSpeed);
         Task WriteRoterCommendposition(short RoterCommendposition);
         bool RoterMoveing { get; }
-        int ReadRoterJogSpeed { get; }
-        int ReadRoterPosSpeed { get; }
-        int ReadRoterCmdPos { get; }
+
 
         //latest RoteryPos//
         Task WriteRoteryPosJogPositveStart();
@@ -44,9 +42,6 @@ namespace SimpleHmi.PlcService
         Task WriteRoteryPosPositioningSpeed(short RoteryPosPositioningSpeed);
         Task WriteRoteryPosCommendposition(short RoteryPosCommendposition);
         bool RoteryPosMoveing { get; }
-        int ReadRoteryPosJogSpeed { get; }
-        int ReadRoteryPosPosSpeed { get; }
-        int ReadRoteryPosCmdPos { get; }
 
         //latest Shorter2//
         Task WriteShorterJogPositveStart();
@@ -58,9 +53,7 @@ namespace SimpleHmi.PlcService
         Task WriteShorterPositioningSpeed(short ShorterPositioningSpeed);
         Task WriteShorterCommendposition(short ShorterCommendposition);
         bool ShorterMoveing { get; }
-        int ReadShorterJogSpeed { get; }
-        int ReadShorterPosSpeed { get; }
-        int ReadShorterCmdPos { get; }
+
 
         // pneumatic
 

@@ -38,7 +38,7 @@ namespace SimpleHmi.PlcService
         public int InletPumpSpeed { get; private set; }
 
         public int OutletPumpSpeed { get; private set; }
-
+        public bool AutoManual { get; private set; }
         public bool RoterMoveing { get; private set; }
         public int ReadRoterJogSpeed { get; private set; }
         public int ReadRoterPosSpeed { get; private set; }
@@ -92,6 +92,7 @@ namespace SimpleHmi.PlcService
                 {
                     ConnectionState = ConnectionStates.Online;
                     _timer.Start();
+                    machinestate();
                 }
                 else
                 {
@@ -124,7 +125,7 @@ namespace SimpleHmi.PlcService
         {
             await Task.Run(() =>
             {                
-                _master.WriteSingleCoilAsync(16, 0, true);
+                _master.WriteSingleCoilAsync(0, 16, true);
                 MachineState = MachineState.Auto;
                 Thread.Sleep(30);
 
@@ -136,7 +137,7 @@ namespace SimpleHmi.PlcService
             await Task.Run(() =>
             {
           
-                _master.WriteSingleCoilAsync(16, 0, false);
+                _master.WriteSingleCoilAsync(0, 16, false);
                 MachineState = MachineState.Manual;
                 Thread.Sleep(30);
 
@@ -182,6 +183,7 @@ namespace SimpleHmi.PlcService
             try
             {
                 _timer.Stop();
+                machinestate();
                 ScanTime = DateTime.Now - _lastScanTime;
                 RefreshValues();
                 OnValuesRefreshed();
@@ -202,8 +204,9 @@ namespace SimpleHmi.PlcService
                     {
                         bool[] readCoils = _master.ReadCoils(1, 0, 50);
 
+                        AutoManual= readCoils[16];
                         RoterMoveing = readCoils[17];
-                        RoteryPosMoveing = readCoils[19];
+                        RoteryPosMoveing = readCoils[18];
                         ShorterMoveing = readCoils[19];
                                                 
                         ShorterGripperState = readCoils[12];
@@ -249,7 +252,17 @@ namespace SimpleHmi.PlcService
             }
         }
 
-
+        private void machinestate()
+        {
+            if (AutoManual == false)
+            {
+                MachineState = MachineState.Manual;
+            }
+            else if (AutoManual == true)
+            {
+                MachineState = MachineState.Auto;
+            }
+        }
 
 
         private void OnValuesRefreshed()
@@ -272,7 +285,7 @@ namespace SimpleHmi.PlcService
             await Task.Run(() =>
             {
                
-                _master.WriteSingleCoilAsync(1, 2, false);
+                _master.WriteSingleCoilAsync(1, 1, false);
 
             });
         }

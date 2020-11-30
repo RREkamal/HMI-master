@@ -697,6 +697,7 @@ namespace SimpleHmi.ViewModels
             /// </summary>
             /// 
             DustCheckNotSelectedCommand = new DelegateCommand(async () => { await DustCheckNotSelectedT(); });
+            //IpAddress = "192.168.1.139";
             IpAddress = "127.0.0.1";
 
             OnPlcServiceValuesRefreshed(null, null);
@@ -714,38 +715,57 @@ namespace SimpleHmi.ViewModels
             if (e.PropertyName == nameof(RoterJogSpeed))
             {
                 await _plcService.WriteRoterJogSpeed((short)RoterJogSpeed);
+                Properties.Mainpage.Default.RoterJogSpeed = RoterJogSpeed;
+                Properties.Mainpage.Default.Save();
             }
             else if (e.PropertyName == nameof(RoterPositioningSpeed))
             {
                 await _plcService.WriteRoterPositioningSpeed((short)RoterPositioningSpeed);
+                Properties.Mainpage.Default.RoterPositioningSpeed = RoterPositioningSpeed;
+                Properties.Mainpage.Default.Save();
             }
             else if (e.PropertyName == nameof(RoterCommendposition))
             {
                 await _plcService.WriteRoterCommendposition((short)RoterCommendposition);
+                Properties.Mainpage.Default.RoterCommendposition = RoterCommendposition;
+                Properties.Mainpage.Default.Save();
+
             }
             else if (e.PropertyName == nameof(RoteryPosJogSpeed))
             {
                 await _plcService.WriteRoteryPosJogSpeed((short)RoteryPosJogSpeed);
+                Properties.Mainpage.Default.RoteryPosJogSpeed = RoteryPosJogSpeed;
+                Properties.Mainpage.Default.Save();
             }
             else if (e.PropertyName == nameof(RoteryPosPositioningSpeed))
             {
                 await _plcService.WriteRoteryPosPositioningSpeed((short)RoteryPosPositioningSpeed);
+                Properties.Mainpage.Default.RoteryPosPositioningSpeed = RoteryPosPositioningSpeed;
+                Properties.Mainpage.Default.Save();
             }
             else if (e.PropertyName == nameof(RoteryPosCommendposition))
             {
                 await _plcService.WriteRoteryPosCommendposition((short)RoteryPosCommendposition);
+                Properties.Mainpage.Default.RoteryPosCommendposition = RoteryPosCommendposition;
+                Properties.Mainpage.Default.Save();
             }
             else if (e.PropertyName == nameof(ShorterJogSpeed))
             {
                 await _plcService.WriteShorterJogSpeed((short)ShorterJogSpeed);
+                Properties.Mainpage.Default.ShorterJogSpeed = ShorterJogSpeed;
+                Properties.Mainpage.Default.Save();
             }
             else if (e.PropertyName == nameof(ShorterPositioningSpeed))
             {
                 await _plcService.WriteShorterPositioningSpeed((short)ShorterPositioningSpeed);
+                Properties.Mainpage.Default.ShorterPositioningSpeed = ShorterPositioningSpeed;
+                Properties.Mainpage.Default.Save();
             }
             else if (e.PropertyName == nameof(ShorterCommendposition))
             {
                 await _plcService.WriteShorterCommendposition((short)ShorterCommendposition);
+                Properties.Mainpage.Default.ShorterCommendposition = ShorterCommendposition;
+                Properties.Mainpage.Default.Save();
             }
 
         }
@@ -759,17 +779,9 @@ namespace SimpleHmi.ViewModels
         {
 
             RoterMoveingState = _plcService.RoterMoveing;
-            RoterJogSpeed = _plcService.ReadRoterJogSpeed;
-            RoterPositioningSpeed = _plcService.ReadRoterPosSpeed;
-            RoterCommendposition = _plcService.ReadRoterCmdPos;
             RoteryPosMoveing = _plcService.RoteryPosMoveing;
-            RoteryPosJogSpeed = _plcService.ReadRoteryPosJogSpeed;
-            RoteryPosPositioningSpeed = _plcService.ReadRoteryPosPosSpeed;
-            RoteryPosCommendposition = _plcService.ReadRoteryPosCmdPos;
             ShorterMoveing = _plcService.ShorterMoveing;
-            ShorterJogSpeed = _plcService.ReadShorterJogSpeed;
-            ShorterPositioningSpeed = _plcService.ReadShorterPosSpeed;
-            ShorterCommendposition = _plcService.ReadShorterCmdPos;
+
             MainGripperState = _plcService.MainGripperState;
             ShorterGripperState = _plcService.ShorterGripperState;
             ShorterCylinderState = _plcService.ShorterCylinderState;
@@ -792,6 +804,7 @@ namespace SimpleHmi.ViewModels
         private void Connect()
         {
             _plcService.Connect(IpAddress, 0, 1);
+            GetMainPageSetting();
         }
 
         /// <summary>
@@ -1090,6 +1103,22 @@ namespace SimpleHmi.ViewModels
             }
             return result;
         }
+
+        public void GetMainPageSetting()
+        {
+            RoterJogSpeed = Properties.Mainpage.Default.RoterJogSpeed;
+            RoterPositioningSpeed = Properties.Mainpage.Default.RoterPositioningSpeed;
+            RoterCommendposition = Properties.Mainpage.Default.RoterCommendposition;
+            RoteryPosJogSpeed = Properties.Mainpage.Default.RoteryPosJogSpeed;
+            RoteryPosPositioningSpeed = Properties.Mainpage.Default.RoteryPosPositioningSpeed;
+            RoteryPosCommendposition = Properties.Mainpage.Default.RoteryPosCommendposition;
+            ShorterJogSpeed = Properties.Mainpage.Default.ShorterJogSpeed;
+            ShorterPositioningSpeed = Properties.Mainpage.Default.ShorterPositioningSpeed;
+            ShorterCommendposition = Properties.Mainpage.Default.ShorterCommendposition;
+
+        }
+
+
 
         #endregion
 
