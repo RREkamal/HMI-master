@@ -109,6 +109,7 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>SettingPage.settings</DependentUpon>
     </Compile>
+    <Compile Include="Utility\Messenger.cs" />
     <Compile Include="ViewModels\HmiStatusBarViewModel.cs" />
     <Compile Include="ViewModels\LeftMenuViewModel.cs" />
     <Compile Include="ViewModels\MainPageViewModel.cs" />

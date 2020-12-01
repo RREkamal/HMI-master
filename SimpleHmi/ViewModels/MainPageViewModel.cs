@@ -1,11 +1,11 @@
 ﻿using Prism.Commands;
+using Prism.Events;
 using Prism.Mvvm;
+using SimpleHmi.Designer;
 using SimpleHmi.PlcService;
+using SimpleHmi.Utility;
 using System;
-using System.Collections.Generic;
 using System.ComponentModel;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 
@@ -19,6 +19,7 @@ namespace SimpleHmi.ViewModels
         #region Private member 
 
         private IPlcService _plcService;
+        IEventAggregator _eventAggregator;
 
         #endregion
 
@@ -28,7 +29,7 @@ namespace SimpleHmi.ViewModels
         /// <summary>
         /// variable to hold PLC IP Address
         /// </summary>
-        
+
         public string IpAddress
         {
             get { return _ipAddress; }
@@ -244,7 +245,9 @@ namespace SimpleHmi.ViewModels
         public int NotGoodPart
         {
             get { return _NotGoodPart; }
-            set { SetProperty(ref _NotGoodPart, value); }
+            set { SetProperty(ref _NotGoodPart, value);
+                    
+                }
         }
         private int _NotGoodPart;
 
@@ -281,6 +284,7 @@ namespace SimpleHmi.ViewModels
         }
 
         private bool _DustCheckState;
+        private DesignPlcService designPlcService;
 
         /// <summary>
         /// Command to Connect PLC
@@ -511,7 +515,7 @@ namespace SimpleHmi.ViewModels
 
 
         #region Private Method
-        public MainPageViewModel(IPlcService ModPlcService)
+        public MainPageViewModel(IPlcService ModPlcService, IEventAggregator ea)
         {
             ///<summary>
             ///PLC Modbus service 
@@ -703,6 +707,14 @@ namespace SimpleHmi.ViewModels
             OnPlcServiceValuesRefreshed(null, null);
             this.PropertyChanged += OnPropertyChanged;
             _plcService.ValuesRefreshed += OnPlcServiceValuesRefreshed;
+            _eventAggregator = ea;
+          
+
+        }
+
+        public MainPageViewModel(DesignPlcService designPlcService)
+        {
+            this.designPlcService = designPlcService;
         }
 
 
@@ -768,6 +780,9 @@ namespace SimpleHmi.ViewModels
                 Properties.Mainpage.Default.Save();
             }
 
+
+
+
         }
 
         /// <summary>
@@ -787,6 +802,7 @@ namespace SimpleHmi.ViewModels
             ShorterCylinderState = _plcService.ShorterCylinderState;
 
             Productselected = SelectedProduct(_plcService.ProductselectedCount);
+            
             TotalPart = _plcService.TotalPartCount;
             GoodPart = _plcService.GoodPartCount;
             NotGoodPart = _plcService.NotGoodPartCount;
@@ -1101,6 +1117,8 @@ namespace SimpleHmi.ViewModels
             {
                 result = Constant.Constant.ProductSelectedUM0018M;
             }
+           
+            FileSelectedGlobalEvent.Instance.Publish(result);
             return result;
         }
 

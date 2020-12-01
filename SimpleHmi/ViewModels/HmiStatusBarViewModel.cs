@@ -86,12 +86,17 @@ namespace SimpleHmi.ViewModels
             string result = "Waiting !!!!";
             if (ConnectionStates == ConnectionStates.Online)
             {
-                if (test_result && Vision_test_Complete)
+                if (Vision_test_Complete)
                 {
-                    result = "Fail";
+                    if (test_result)
+                    {
+                        result = "Fail";
+                    }
+                    else if (!test_result)
+                        result = "Pass";
                 }
-                else if (!test_result)
-                    result = "Pass";
+                else
+                { result = "Ready"; }
             }
             else
             { result = "Please Connect  !!"; }

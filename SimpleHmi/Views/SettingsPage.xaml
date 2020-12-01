@@ -17,20 +17,20 @@
                    Text="Auto Settings"
                    TextWrapping="Wrap" />
 
-        <TextBlock Margin="10,46,0,0"
+        <TextBlock Margin="13,70,0,0"
                    HorizontalAlignment="Left"
                    VerticalAlignment="Top"
                    Text="Shorter Pick Position"
                    TextWrapping="Wrap" />
 
-        <TextBlock Margin="180,46,0,0"
+        <TextBlock Margin="183,70,0,0"
                    HorizontalAlignment="Left"
                    VerticalAlignment="Top"
                    Text="Duste case Position"
                    TextWrapping="Wrap" />
 
         <TextBox Width="110"
-                 Margin="10,67,0,0"
+                 Margin="13,91,0,0"
                  HorizontalAlignment="Left"
                  VerticalAlignment="Top" 
                  Text="{Binding InletPumpSpeed,
@@ -39,13 +39,21 @@
                                 UpdateSourceTrigger=PropertyChanged}"/>
 
         <TextBox Width="110"
-                 Margin="180,67,0,0"
+                 Margin="183,91,0,0"
                  HorizontalAlignment="Left"
                  VerticalAlignment="Top" 
                  Text="{Binding OutletSpeed,
                                 Delay=1000,
                                 Mode=TwoWay,
                                 UpdateSourceTrigger=PropertyChanged}" />
+        <TextBlock Margin="300,10,0,0"
+                   HorizontalAlignment="Left"
+                   VerticalAlignment="Top"
+                   Background="BlanchedAlmond"
+                   FontSize="15"
+                   FontWeight="Medium"
+                   Text= "{Binding strSelectedProduct}"
+                   TextWrapping="Wrap" />
 
     </Grid>
 </UserControl>

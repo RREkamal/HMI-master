@@ -19,7 +19,7 @@
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />
-            <RowDefinition Height="Auto" />
+            <RowDefinition Height="auto" />
         </Grid.RowDefinitions>
         <ContentControl Grid.Row="0" Grid.Column="0" prism:RegionManager.RegionName="{x:Static infrastructure:Regions.LeftMenuRegion}"/>
         <ContentControl Grid.Row="0" Grid.Column="1" prism:RegionManager.RegionName="{x:Static infrastructure:Regions.ContentRegion}"/>

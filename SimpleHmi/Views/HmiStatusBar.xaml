@@ -24,15 +24,15 @@
             
 
             <TextBlock Margin="0,0,0,0" VerticalAlignment="Center" Text="{Binding ConnectionState, StringFormat=Connection state: {0}}" />
-                <Separator  />
-                <TextBlock Margin="10,0,0,0" VerticalAlignment="Center" Text="{Binding ScanTime, StringFormat=ScanTime {0}}" />
-                <Separator />
-                <TextBlock Margin="10,0,0,0" VerticalAlignment="Center" Text="{Binding MachineState, StringFormat=Machine state: {0}}" />
-               
-                <Label Name="VisionTestresult"  
-                       Content="{Binding resultpath }" BorderThickness="10" FontWeight="Medium" FontSize="20" 
+            <Separator  />
+            <TextBlock Margin="10,0,0,0" VerticalAlignment="Center" Text="{Binding ScanTime, StringFormat=ScanTime {0}}" />
+            <Separator />
+            <TextBlock Margin="10,0,0,0" VerticalAlignment="Center" Text="{Binding MachineState, StringFormat=Machine state: {0}}" />
+            <Separator />
+            <Label Name="VisionTestresult"  
+                       Content="{Binding resultpath }" BorderThickness="1" FontWeight="Medium" FontSize="15" 
                        Background="{Binding TestResultState, Converter={StaticResource StringToColorConverter}}"
-                       VerticalAlignment="Center" Width="291" />
+                       VerticalAlignment="Center" Width="291" Height="auto"/>
               
 
 

@@ -92,7 +92,6 @@ namespace SimpleHmi.PlcService
                 {
                     ConnectionState = ConnectionStates.Online;
                     _timer.Start();
-                    machinestate();
                 }
                 else
                 {
@@ -126,7 +125,7 @@ namespace SimpleHmi.PlcService
             await Task.Run(() =>
             {                
                 _master.WriteSingleCoilAsync(0, 16, true);
-                MachineState = MachineState.Auto;
+          
                 Thread.Sleep(30);
 
 
@@ -138,7 +137,7 @@ namespace SimpleHmi.PlcService
             {
           
                 _master.WriteSingleCoilAsync(0, 16, false);
-                MachineState = MachineState.Manual;
+              
                 Thread.Sleep(30);
 
             });
@@ -200,49 +199,52 @@ namespace SimpleHmi.PlcService
             lock (_locker)
             {
                 {
-                    if (_master != null)
+                    if (ConnectionState==  ConnectionStates.Online)
                     {
-                        bool[] readCoils = _master.ReadCoils(1, 0, 50);
+                        if (_master.Transport != null)
+                        {
+                            bool[] readCoils = _master.ReadCoils(1, 0, 50);
 
-                        AutoManual= readCoils[16];
-                        RoterMoveing = readCoils[17];
-                        RoteryPosMoveing = readCoils[18];
-                        ShorterMoveing = readCoils[19];
-                                                
-                        ShorterGripperState = readCoils[12];
-                        ShorterCylinderState = readCoils[13];
-                        MainGripperState = readCoils[14];
+                            AutoManual = readCoils[16];
+                            RoterMoveing = readCoils[17];
+                            RoteryPosMoveing = readCoils[18];
+                            ShorterMoveing = readCoils[19];
 
-
-                        AligmentCheck = readCoils[27];
-                        CrackCheck = readCoils[28];
-                        DustCheck = readCoils[29];
-                        TestResultState = readCoils[30];
-                        VisiontestComplete = readCoils[31];
+                            ShorterGripperState = readCoils[12];
+                            ShorterCylinderState = readCoils[13];
+                            MainGripperState = readCoils[14];
 
 
+                            AligmentCheck = readCoils[27];
+                            CrackCheck = readCoils[28];
+                            DustCheck = readCoils[29];
+                            TestResultState = readCoils[30];
+                            VisiontestComplete = readCoils[31];
 
-                        ushort[] readHoldingRegister = _master.ReadHoldingRegisters(1, 0, 50);
-                        
-                        InletPumpSpeed = Convert.ToInt32(readHoldingRegister[40]);
-                        OutletPumpSpeed = Convert.ToInt32(readHoldingRegister[41]);
 
-                        ReadRoterJogSpeed = Convert.ToInt32(readHoldingRegister[1]);
-                        ReadRoterPosSpeed = Convert.ToInt32(readHoldingRegister[2]);
-                        ReadRoterCmdPos = Convert.ToInt32(readHoldingRegister[3]);
 
-                        ReadRoteryPosJogSpeed = Convert.ToInt32(readHoldingRegister[7]);
-                        ReadRoteryPosPosSpeed = Convert.ToInt32(readHoldingRegister[6]);
-                        ReadRoteryPosCmdPos = Convert.ToInt32(readHoldingRegister[5]);
+                            ushort[] readHoldingRegister = _master.ReadHoldingRegisters(1, 0, 50);
 
-                        ReadShorterJogSpeed = Convert.ToInt32(readHoldingRegister[12]);
-                        ReadShorterPosSpeed = Convert.ToInt32(readHoldingRegister[13]);
-                        ReadShorterCmdPos = Convert.ToInt32(readHoldingRegister[14]);
+                            InletPumpSpeed = Convert.ToInt32(readHoldingRegister[40]);
+                            OutletPumpSpeed = Convert.ToInt32(readHoldingRegister[41]);
 
-                        ProductselectedCount = Convert.ToInt32(readHoldingRegister[28]);
-                        TotalPartCount = Convert.ToInt32(readHoldingRegister[29]);
-                        GoodPartCount = Convert.ToInt32(readHoldingRegister[30]);
-                        NotGoodPartCount = Convert.ToInt32(readHoldingRegister[31]);
+                            ReadRoterJogSpeed = Convert.ToInt32(readHoldingRegister[1]);
+                            ReadRoterPosSpeed = Convert.ToInt32(readHoldingRegister[2]);
+                            ReadRoterCmdPos = Convert.ToInt32(readHoldingRegister[3]);
+
+                            ReadRoteryPosJogSpeed = Convert.ToInt32(readHoldingRegister[7]);
+                            ReadRoteryPosPosSpeed = Convert.ToInt32(readHoldingRegister[6]);
+                            ReadRoteryPosCmdPos = Convert.ToInt32(readHoldingRegister[5]);
+
+                            ReadShorterJogSpeed = Convert.ToInt32(readHoldingRegister[12]);
+                            ReadShorterPosSpeed = Convert.ToInt32(readHoldingRegister[13]);
+                            ReadShorterCmdPos = Convert.ToInt32(readHoldingRegister[14]);
+
+                            ProductselectedCount = Convert.ToInt32(readHoldingRegister[28]);
+                            TotalPartCount = Convert.ToInt32(readHoldingRegister[29]);
+                            GoodPartCount = Convert.ToInt32(readHoldingRegister[30]);
+                            NotGoodPartCount = Convert.ToInt32(readHoldingRegister[31]);
+                        }
 
 
 
